@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "first_task"
+	group: ""
+	icon: "minecraft:rose_bush"
+	id: "74EBF0C0231B920E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This modpack was created to spice up Create mod, this is not going to be your default gameplay. Be prepared for challenges and grind."]
+			icon: "minecraft:gold_ore"
+			id: "1DE8AE5511F31900"
+			rewards: [{
+				id: "2A96CF2A6AB257D8"
+				item: "create:builders_tea"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "00FB7CA04281A4B6"
+				title: "Welcome"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"- &6The Sky Factory Guide&r provides a path to follow"
+				""
+				"- &6The Market&r let's you spend your money here for thats sweet loot"
+				""
+				"- &6The Lifesavers&r if you do get stuck you can look for help here"
+			]
+			icon: "ftbquests:book"
+			id: "6C02703B9F38D7B5"
+			rewards: [
+				{
+					id: "6F26A51CC53B4F15"
+					item: "minecraft:writable_book"
+					type: "item"
+				}
+				{
+					id: "02CD839DD0A7126B"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2F958BFF333F207A"
+				type: "checkmark"
+			}]
+			title: "Quest Content Overwiew"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [""]
+			icon: "minecraft:gold_block"
+			id: "7975DD9342102C0A"
+			rewards: [{
+				id: "6E7C6C0564D4A829"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "781D6B9C08771810"
+				type: "checkmark"
+			}]
+			title: "Good luck!"
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+	title: "Welcome"
+}

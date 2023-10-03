@@ -1,0 +1,224 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = fancymenu_data/assets/sky.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 175
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = top-centered
+  x = -125
+  action = movebutton
+  y = 225
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = top-centered
+  x = -125
+  action = movebutton
+  y = 175
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 225
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 255
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-centered
+  x = 105
+  action = movebutton
+  y = 225
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 150
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 200
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = top-centered
+  x = -125
+  action = movebutton
+  y = 200
+}
+
+customization {
+  path = fancymenu_data/assets/beta_small.png
+  orientation = bottom-centered
+  x = -33
+  width = 66
+  action = addtexture
+  actionid = c9ae60fa-c06b-4d53-9ce8-0cdaf514aafc1696165821035
+  y = -36
+  height = 25
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 293
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = ad91a362-d323-456c-8c46-b93b088484c61696164370147
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 122
+  action = deep_customization_element:title_screen_branding
+  actionid = 2aaad230-4806-4727-82c9-5c5ff97502ba1696164370152
+  y = 405
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 625
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 2c79a846-9e2c-4346-bdc1-fdf7848681ad1696164370152
+  y = 437
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 530
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 78240245-2f24-449a-b932-09cec2dc38eb1696164370152
+  y = 214
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 290
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 28d2a120-4ac9-49f5-a286-4f174f3ff7de1696164370152
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = mid-left
+  splash_color = #ffff00
+  hidden = true
+  x = 543
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 48c19015-0c50-435b-ab62-8dabff4b431f1696164370152
+  y = -112
+  height = 30
+}
+
+customization {
+  path = fancymenu_data/assets/minecraft_title1.png
+  orientation = top-centered
+  x = -139
+  width = 279
+  action = addtexture
+  actionid = 68172154-063c-40d3-9ee6-0080388a5cde1696164602322
+  y = 24
+  height = 100
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ffff00
+  shadow = true
+  rotation = -15.0
+  scale = 0.75
+  refresh = true
+  bouncing = true
+  vanilla-like = true
+  x = 89
+  actionid = 6b885eaa-1e6f-4917-9655-22b20480239b1696164723242
+  action = addsplash
+  y = 108
+  text = I have a suggestion.
+}
+

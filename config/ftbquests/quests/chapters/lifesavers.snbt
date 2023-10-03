@@ -1,0 +1,51 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "lifesavers"
+	group: ""
+	icon: "minecraft:apple"
+	id: "469BE882B5A3C6E0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Just in case you made yourself an obsidian..."]
+			icon: "minecraft:lava_bucket"
+			id: "0B12F413BC4EB68D"
+			rewards: [{
+				id: "63933EE816E37F65"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			subtitle: "You failed at that cobblestone generator again?"
+			tasks: [{
+				id: "5310CCBD2B48ABA4"
+				title: "Lava bucket"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			description: [""]
+			icon: "create:sweet_roll"
+			id: "4BD7BE4C158C5D36"
+			rewards: [{
+				count: 15
+				id: "260B88D3B88E1826"
+				item: "create:sweet_roll"
+				type: "item"
+			}]
+			subtitle: "Few snacks to keep you going"
+			tasks: [{
+				id: "14B75B003AE857FE"
+				title: "Bread"
+				type: "checkmark"
+			}]
+			title: "Sweet Rolls"
+			x: -0.5d
+			y: 2.5d
+		}
+	]
+	title: "Lifesavers"
+}

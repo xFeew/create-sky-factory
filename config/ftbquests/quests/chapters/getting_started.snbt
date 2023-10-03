@@ -1,0 +1,66 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: "5D641ED9208DC44C"
+	icon: "minecraft:cobblestone"
+	id: "77EB555AFE4C2BEA"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Acquire a cobblestone from cobblestone generator"]
+			id: "257FF8815C7286F8"
+			rewards: [{
+				id: "647779139567F9CB"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3872E9EA2DD5867D"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Cobblestone generator"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "44E134E6FB0857A5"
+			shape: "square"
+			tasks: [{
+				id: "14CC03858B2A3236"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"257FF8815C7286F8"
+				"44E134E6FB0857A5"
+			]
+			hide_dependency_lines: false
+			id: "0616E6B085ACAC38"
+			min_required_dependencies: 2
+			rewards: [{
+				id: "6716600D631830BE"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "02E1E1E2C49F68F2"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Getting started"
+}
