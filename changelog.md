@@ -5,13 +5,12 @@ General:
 - Fixed spawn point location
 - Added few starter items 
 - Added VoidTotem as guarenteed loot from Warwick
-- Added Molten variants of ores mainly: Molten Iron, Molten Gold, Molten Copper
+- Added Molten variants of ores mainly: Molten Iron, Molten Gold, Molten Copper, Molten Zinc
 - Added More Quests
 - Added Vein Structures
 
 - Changed base game recipies
-- Changed main island contents (reducing andesite, increasing cobble, increasing gravel, adding extra loot for easier start etc.) 
-- Changed the rain chance
+- Changed main island content (reducing andesite, increasing cobble, increasing gravel, adding extra loot for easier start etc.) 
 - Changed island spawn spacing to 1500 (from 1000)
 
 - Removed lore books from main island
@@ -51,4 +50,4 @@ Mods:
 # 0.1a
 
 - Added custom skyblock island
-- Preconfigured s
+- Preconfigured mods
