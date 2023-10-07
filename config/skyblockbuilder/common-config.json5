@@ -84,7 +84,7 @@
       // If you set the spawn height type to "set", the bottom value will be used for a set height. Otherwise, the height will be calculated.
       "range": {
         "bottom": 64,
-        "top": 319
+        "top": 200
       },
       
       // set:
@@ -96,7 +96,7 @@
       //    Searches from the top position down to the bottom position for a valid spawn.
       //    If no valid position was found, the bottom position will be used.
       // Allowed values: set, range_bottom, range_top
-      "spawnType": "set"
+      "spawnType": "range_bottom"
     }
   },
   
@@ -123,7 +123,29 @@
         "sky_structures:grass_island_darkoak",
         "sky_structures:grass_island_jungle",
         "sky_structures:grass_island_oak",
-        "sky_structures:grass_island_spruce"
+        "sky_structures:grass_island_spruce",
+        "robs_hot_air_balloons:black_white_balloon",
+        "robs_hot_air_balloons:blue_white_balloon",
+        "robs_hot_air_balloons:brown_white_balloon",
+        "robs_hot_air_balloons:cyan_white_balloon",
+        "robs_hot_air_balloons:gray_white_balloon",
+        "robs_hot_air_balloons:green_white_balloon",
+        "robs_floating_islands:desert_temple",
+        "robs_floating_islands:farmer_house",
+        "robs_floating_islands:forest_camp",
+        "robs_floating_islands:igloo",
+        "robs_floating_islands:jungle",
+        "robs_hot_air_balloons:magenta_white_balloon",
+        "robs_hot_air_balloons:light_blue_white_balloon",
+        "robs_hot_air_balloons:lime_white_balloon",
+        "robs_floating_islands:mooshroom",
+        "robs_floating_islands:mesa_mine",
+        "robs_floating_islands:oasis",
+        "robs_hot_air_balloons:orange_white_balloon",
+        "robs_floating_islands:ruined_portal",
+        "robs_floating_islands:savanna",
+        "robs_floating_islands:swamp",
+        "robs_floating_islands:tundra"
       ]
     },
     
@@ -134,7 +156,14 @@
       "allow_list": true,
       "elements": [
         "minecraft:fortress",
-        "skyvillages:skyvillage"
+        "skyvillages:skyvillage",
+        "castle_in_the_sky:castle_in_the_sky",
+        "structory:bone",
+        "structory:copper",
+        "structory:gold",
+        "structory:iron",
+        "structory:tuff",
+        "structory:zinc",
       ]
     }
   },
@@ -142,7 +171,7 @@
   "Utility": {
   
     // Should players be able to create their own team? [default: false]
-    "createOwnTeam": false,
+    "createOwnTeam": true,
     
     // Should players be able to leave their team or invite others? [default: true]
     "selfManage": true,
@@ -222,14 +251,14 @@
     // Distance between islands in overworld [default: 8192]
     // nether the distance is 1/8
     // Range: 64 - 29999900
-    "islandDistance": 1000,
+    "islandDistance": 1500,
     
     // The offset from 0, 0 to generate the islands
     // Can be used to generate them in the middle of .mca files
     "offset": 0,
     
     // Sea level in world [default: 63]
-    "seaHeight": 150,
+    "seaHeight": 63,
     
     // Should a surface be generated in the dimensions? [default: false]
     "surface": false,

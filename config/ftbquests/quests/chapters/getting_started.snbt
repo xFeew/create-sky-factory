@@ -1,9 +1,9 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "getting_started"
 	group: "5D641ED9208DC44C"
-	icon: "minecraft:cobblestone"
+	icon: "minecraft:grass_block"
 	id: "77EB555AFE4C2BEA"
 	order_index: 0
 	progression_mode: "linear"
@@ -18,30 +18,41 @@
 				xp: 100
 			}]
 			shape: "square"
+			subtitle: "The basics of skyblock"
 			tasks: [{
 				id: "3872E9EA2DD5867D"
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
 			title: "Cobblestone generator"
-			x: -2.0d
-			y: -2.5d
-		}
-		{
-			id: "44E134E6FB0857A5"
-			shape: "square"
-			tasks: [{
-				id: "14CC03858B2A3236"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			x: -2.0d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
+			icon: "minecraft:oak_log"
+			id: "44E134E6FB0857A5"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Wish for the sapling"
+			tasks: [
+				{
+					id: "14CC03858B2A3236"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "2C2B4CCF018630B8"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
 			dependencies: [
-				"257FF8815C7286F8"
-				"44E134E6FB0857A5"
+				"249D6ED0D1006190"
+				"11A1E736DD88B397"
+				"2203EDF3E1C9DBE6"
 			]
 			hide_dependency_lines: false
 			id: "0616E6B085ACAC38"
@@ -58,9 +69,232 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["257FF8815C7286F8"]
+			icon: "minecraft:cobblestone"
+			id: "2F35D8C6248421E2"
+			shape: "square"
+			subtitle: "This is getting boring"
+			tasks: [
+				{
+					consume_items: false
+					count: 64L
+					id: "20BC052CFE87F865"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "41E9CE043220807A"
+					type: "checkmark"
+				}
+			]
+			title: "Mining..."
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			icon: "minecraft:kelp"
+			id: "3D8896009ADFF50D"
+			tasks: [
+				{
+					id: "30F1CA291C6A31FF"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "7F9E5A383B891615"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3D8896009ADFF50D"
+				"17D0931852F5DD3C"
+			]
+			icon: "architects_palette:algal_blend"
+			id: "503FCC3F950B8D84"
+			tasks: [
+				{
+					id: "496F2436CFB0417A"
+					item: "architects_palette:algal_blend"
+					type: "item"
+				}
+				{
+					id: "39CF08576D1270BA"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["503FCC3F950B8D84"]
+			icon: "architects_palette:algal_brick"
+			id: "249D6ED0D1006190"
+			tasks: [
+				{
+					id: "3C67886AFFC20598"
+					item: "architects_palette:algal_brick"
+					type: "item"
+				}
+				{
+					id: "557620B24C747049"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			icon: "minecraft:gravel"
+			id: "7D30DAB2280FDA76"
+			tasks: [
+				{
+					id: "63C769316A8FEB78"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "1917854695206A5F"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D30DAB2280FDA76"]
+			icon: "thermal:iron_dust"
+			id: "3DE69EEA23D57F0F"
+			tasks: [
+				{
+					id: "37014F4A39102D4E"
+					item: "thermal:iron_dust"
+					type: "item"
+				}
+				{
+					id: "499039CBACA67394"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DE69EEA23D57F0F"]
+			icon: "minecraft:iron_nugget"
+			id: "11A1E736DD88B397"
+			tasks: [
+				{
+					id: "7D5B00EC373B37AA"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "64981A7BFDECBF62"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["370875338E394C83"]
+			icon: "minecraft:clay_ball"
+			id: "17D0931852F5DD3C"
+			tasks: [
+				{
+					id: "33ED2E0D75D65E05"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "2E4E973F0E414EA5"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			icon: "minecraft:andesite"
+			id: "2203EDF3E1C9DBE6"
+			tasks: [
+				{
+					id: "02348C98E15F7481"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "44182534B8222FF3"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
 			y: 0.0d
 		}
+		{
+			icon: "minecraft:sand"
+			id: "370875338E394C83"
+			tasks: [
+				{
+					id: "53279E78C632481C"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "274E30FAB76AA504"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["44E134E6FB0857A5"]
+			description: ["For now the kelp is accesible from here."]
+			icon: "minecraft:kelp"
+			id: "0692F10BFDBB89E7"
+			rewards: [{
+				id: "7169AD00EE2FAB1E"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "57E15F804F4311BC"
+				type: "checkmark"
+			}]
+			title: "Free kelp!"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0616E6B085ACAC38"]
+			description: [""]
+			icon: "supplementaries:cartographers_quill"
+			id: "0D9DEACCDAFDAD0C"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Consider automating Andesite Alloy"
+			tasks: [{
+				id: "3A2BEE59A579CCB4"
+				type: "checkmark"
+			}]
+			title: "Hint"
+			x: 15.0d
+			y: -2.0d
+		}
+	]
+	subtitle: [
+		"Chapter I"
+		"Fundamentals"
 	]
 	title: "Getting started"
 }

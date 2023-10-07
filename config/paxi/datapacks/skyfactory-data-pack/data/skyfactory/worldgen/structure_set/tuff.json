@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:tuff",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 192846,
+    "spacing": 18,
+    "separation": 12,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "5D641ED9208DC44C", title: "Adventure Guide" }]
+	chapter_groups: [
+		{ id: "5D641ED9208DC44C", title: "Sky Factory Guide" }
+		{ id: "67BCFFD18E17C1C6", title: "The Ultimate Farmer Guide" }
+	]
 }

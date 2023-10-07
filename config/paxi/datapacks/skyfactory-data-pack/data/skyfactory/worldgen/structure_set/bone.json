@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:bone",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 992963,
+    "spacing": 10,
+    "separation": 5,
+    "type": "minecraft:random_spread"
+  }
+}

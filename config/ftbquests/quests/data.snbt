@@ -18,6 +18,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
-	title: "Create: Aerial Factory"
+	title: "Create: Sky Factory"
 	version: 13
 }

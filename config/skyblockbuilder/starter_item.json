@@ -1,3 +1,33 @@
 {
-  "items": []
+  "items": [
+    {
+      "item": "create_sa:zinc_sword",
+      "nbt": "{Damage:30}"
+    },
+    {
+      "item": "ftbquests:book"
+    },
+    {
+      "item": "minecraft:written_book",
+      "nbt": "{author:\"The Warden\",display:{},pages:['{\"extra\":[{\"text\":\"      Welocome to\\\\n  \"},{\"color\":\"gold\",\"text\":\"Create\"},{\"color\":\"aqua\",\"text\":\" Sky \"},{\"color\":\"blue\",\"text\":\"Factory\"},{\"text\":\"\\\\n\\\\nYou are currently on a testing server.\\\\n\\\\nDon\\'t treat this world seriously, it will be removed in the future as the modpack updates.\\\\n\\\\nRead all the pages.\"}],\"text\":\"\"}','{\"text\":\"There are many changes in the modpack starting from world generation ending on recipes.\\\\n\\\\nIt\\'s not going to be an easy adventure.\"}','{\"text\":\"If you haven\\'t played skyblock before, your main focus should be on farming what can be farmed.\\\\n\\\\nStart with that Oak tree, explore and mine the island for resources.\\\\n \"}','{\"extra\":[{\"text\":\"The islands around you contain various \"},{\"bold\":true,\"text\":\"usefull \"},{\"text\":\"items, such as water and lava.\\\\n\\\\nFigure out how to get there and make a cobblestone generator.\"}],\"text\":\"\"}','{\"text\":\"Use Create mod and its addons to advance.\\\\n\\\\nSifter and Water Strainer should be your priority.\\\\n\\\\nUse the Quest Book if you get stuck, theres also Market if you want to skip the grind.\\\\n\\\\nGood luck! :)\"}'],resolved:1b,title:\"Introduction\"}"
+    },
+    {
+      "item": "minecraft:bread",
+      "count": 9
+    },
+    {
+      "item": "thermal:copper_coin",
+      "count": 16
+    },
+    {
+      "item": "minecraft:shield",
+      "nbt": "{Damage:20}",
+      "Slot": "offhand"
+    },
+    {
+      "item": "minecraft:leather_boots",
+      "nbt": "{Damage:5}",
+      "Slot": "feet"
+    }
+  ]
 }

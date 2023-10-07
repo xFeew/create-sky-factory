@@ -1,0 +1,32 @@
+{
+	icon: "minecraft:wheat_seeds"
+	id: "37B3DD70A6A6A4D9"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "minecraft:wheat_seeds" }
+		{ item: "minecraft:pumpkin_seeds" }
+		{ item: "minecraft:melon_seeds" }
+		{ item: "minecraft:beetroot_seeds" }
+		{ item: "createcafe:cassava_seeds" }
+		{ item: "createcafe:coffee_beans" }
+		{ item: "farmersdelight:cabbage_seeds" }
+		{ item: "farmersdelight:tomato_seeds" }
+		{ item: "bakery:strawberry_seeds" }
+		{ item: "bakery:oat_seeds" }
+		{ item: "culturaldelights:cucumber_seeds" }
+		{ item: "culturaldelights:eggplant_seeds" }
+		{ item: "minecraft:carrot" }
+		{ item: "minecraft:potato" }
+		{ item: "farmersdelight:onion" }
+		{ item: "farmersdelight:rice" }
+		{ item: "minecraft:sweet_berries" }
+		{ item: "minecraft:glow_berries" }
+		{
+			command: "/say Unluckily, you have nothing..."
+			type: "command"
+			weight: 0.182f
+		}
+	]
+	title: "seeds"
+}

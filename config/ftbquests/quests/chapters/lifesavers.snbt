@@ -9,24 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Just in case you made yourself an obsidian..."]
-			icon: "minecraft:lava_bucket"
-			id: "0B12F413BC4EB68D"
-			rewards: [{
-				id: "63933EE816E37F65"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			subtitle: "You failed at that cobblestone generator again?"
-			tasks: [{
-				id: "5310CCBD2B48ABA4"
-				title: "Lava bucket"
-				type: "checkmark"
-			}]
-			x: -0.5d
-			y: 1.0d
-		}
-		{
 			description: [""]
 			icon: "create:sweet_roll"
 			id: "4BD7BE4C158C5D36"
@@ -45,6 +27,41 @@
 			title: "Sweet Rolls"
 			x: -0.5d
 			y: 2.5d
+		}
+		{
+			icon: "delightful:lavender_tea"
+			id: "2BC8385F81277E34"
+			rewards: [{
+				id: "28240CBCB3C4C8D6"
+				item: "delightful:lavender_tea"
+				type: "item"
+			}]
+			subtitle: "Small boost to productivity"
+			tasks: [{
+				id: "557340C2C4412761"
+				type: "checkmark"
+			}]
+			title: "Refreshing drink"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"This section contains quests which can be completed without the need of any special requirements."
+				""
+				"If you need anything just take it, but remeber you can complete the quests &lonly once&r."
+			]
+			icon: "artifacts:crystal_heart"
+			id: "5BB556AE481B787D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5CCCAC00D6016C2D"
+				type: "checkmark"
+			}]
+			title: "Lifesavers"
+			x: 0.0d
+			y: -0.5d
 		}
 	]
 	title: "Lifesavers"

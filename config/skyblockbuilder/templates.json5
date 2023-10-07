@@ -16,7 +16,7 @@
   
   "spawns": {
     "default": [
-      [ 53, 100, 54 ]
+      [ 53, 36, 46 ]
     ]
   },
   
@@ -28,8 +28,8 @@
   // The list of templates being available. The first entry is the default template.
   "templates": [
     {
-      "name": "Aerial Factory Island",
-      "file": "CSF.nbt",
+      "name": "Sky Factory Island",
+      "file": "CSF3.nbt",
       "spawns": "default",
       "direction": "south",
       "surroundingBlocks": "default"

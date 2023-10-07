@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:gold",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 9061254,
+    "spacing": 13,
+    "separation": 9,
+    "type": "minecraft:random_spread"
+  }
+}

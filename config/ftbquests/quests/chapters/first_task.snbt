@@ -9,8 +9,19 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["This modpack was created to spice up Create mod, this is not going to be your default gameplay. Be prepared for challenges and grind."]
-			icon: "minecraft:gold_ore"
+			dependencies: ["1DE9BA607DFB3ED5"]
+			description: [
+				"This modpack was created to spice up Create mod."
+				""
+				"This is not going to be your default experience. "
+				""
+				"The difficulty has been turned up, the recipies got more advanced and difficult than ever."
+				""
+				"Automation is the key."
+				""
+				"Be prepared for challenges and grind."
+			]
+			icon: "artifacts:crystal_heart"
 			id: "1DE8AE5511F31900"
 			rewards: [{
 				id: "2A96CF2A6AB257D8"
@@ -29,27 +40,21 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1DE8AE5511F31900"]
 			description: [
 				"- &6The Sky Factory Guide&r provides a path to follow"
 				""
-				"- &6The Market&r let's you spend your money here for thats sweet loot"
+				"- &6The Market&r let's you spend your money here for that sweet loot"
 				""
 				"- &6The Lifesavers&r if you do get stuck you can look for help here"
 			]
 			icon: "ftbquests:book"
 			id: "6C02703B9F38D7B5"
-			rewards: [
-				{
-					id: "6F26A51CC53B4F15"
-					item: "minecraft:writable_book"
-					type: "item"
-				}
-				{
-					id: "02CD839DD0A7126B"
-					item: "ftbquests:book"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "02CD839DD0A7126B"
+				item: "ftbquests:book"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2F958BFF333F207A"
@@ -60,6 +65,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6C02703B9F38D7B5"]
 			description: [""]
 			icon: "minecraft:gold_block"
 			id: "7975DD9342102C0A"
@@ -77,6 +83,28 @@
 			title: "Good luck!"
 			x: 0.0d
 			y: 4.5d
+		}
+		{
+			description: [
+				"&lThis modpack is still in development&r"
+				""
+				""
+				"Please remeber some stuff might break, some might not be accessible, some recipies might be incorrect or cause confilcts."
+				""
+				"&lA lot of the stuff is not yet finished.&r"
+			]
+			icon: "forbidden_arcanus:test_tube"
+			id: "1DE9BA607DFB3ED5"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Please note."
+			tasks: [{
+				id: "69807310B8987F89"
+				type: "checkmark"
+			}]
+			title: "BETA"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "Welcome"
