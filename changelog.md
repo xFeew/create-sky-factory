@@ -1,3 +1,11 @@
+# 0.1.1c
+
+- Fixed missing skyfactory veins
+
+# 0.1.1b
+
+- Fixed the "Took to long to login" issue while joining server
+
 # 0.1.1a
 
 General:

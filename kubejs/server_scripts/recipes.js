@@ -38,6 +38,10 @@ let MC = (id, x) => MOD("minecraft", id, x)
 * KubeJS
 */
 let KJ = (id, x) => MOD("kubejs", id, x)
+/**
+* Chiseled
+*/
+let CH = (id, x) => MOD("chipped", id, x)
 let EG = (id, x) => MOD("endergetic", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 let BOP = (id, x) => MOD("biomesoplenty", id, x)
@@ -103,6 +107,7 @@ ServerEvents.recipes((event) => {
     farmersdelight(event);
     rubberMatters(event);
     andesiteAlloy(event);
+    woodProcessing(event);
     oreProcessing(event);
     slagProcessing(event);
     seeds(event);
@@ -129,14 +134,13 @@ function removeRecipes(event){
     event.remove({input: 'create:brass_nugget', output: 'createdeco:brass_coin' })
     event.remove({input: '#forge:nuggets/netherite', output: 'createdeco:netherite_coin' })
 
+    //Sand washing
+    event.remove({input: 'minecraft:red_sand', output: 'minecraft:gold_nugget' })
+
 
     //Create stuff
     event.remove({output: 'create:cogwheel' })
     event.remove({output: 'create:large_cogwheel' })
-
-    //Thermal stuff
-    event.remove({output: 'thermal:saw_blade' })
-    event.remove({output: 'thermal:drill_head' })
     event.remove({output: 'create:mechanical_saw' })
     event.remove({output: 'create:mechanical_drill' })
     event.remove({output: 'create:mechanical_press' })
@@ -147,6 +151,17 @@ function removeRecipes(event){
     event.remove({output: 'create:spout' })
     event.remove({output: 'create:fluid_valve' })
     event.remove({output: 'create:mechanical_pump' })
+
+    //Water power
+    event.remove({output: 'create:water_wheel' })
+    event.remove({output: 'create:large_water_wheel' })
+
+    //Thermal stuff
+    event.remove({output: 'thermal:saw_blade' })
+    event.remove({output: 'thermal:drill_head' })
+    event.remove({output: 'thermal:device_tree_extractor' })
+
+
 
     //Create Precision mechanism
     //event.remove({output: 'create:precision_mechanism'})
@@ -160,21 +175,41 @@ function mechanism(event){
 		Item.of('kubejs:basic_mechanism'),
 	], MC('#wooden_slabs'), [
 		event.recipes.createDeploying('kubejs:incomplete_basic_mechanism', ['kubejs:incomplete_basic_mechanism', MC("iron_nugget")]),
+		event.recipes.createDeploying('kubejs:incomplete_basic_mechanism', ['kubejs:incomplete_basic_mechanism', CR("andesite_alloy")]),
 		event.recipes.createDeploying('kubejs:incomplete_basic_mechanism', ['kubejs:incomplete_basic_mechanism', CR("andesite_alloy")])
 	]).transitionalItem('kubejs:incomplete_basic_mechanism').loops(1)
 
-
+    //Basic Crafting bench
+  event.shapeless('1x kubejs:basic_mechanism', [CR('andesite_alloy'), F('#nuggets/iron'), MC('#wooden_slabs'), CR('cogwheel')])
+	// event.shapeless(KJ('basic_mechanism', 1), [
+	// 	' N ',
+	// 	'AS ',
+	// ], {
+  //       A: CR('andesite_alloy'),
+	//     N: F('#nuggets/iron'),
+	//     S: MC('#wooden_slabs')
+	// })
 
   //Sealed
 	event.shaped(KJ('sealed_mechanism', 1), [
-		'SBS'
+    'CCC',
+		'SBS',
+    'CCC'
 	], {
     B: KJ('basic_mechanism'),
-		S: TE('cured_rubber')
+		S: TE('cured_rubber'),
+    C: CR('copper_nugget')
 	})
 
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:sealed_mechanism'),
+	], KJ('basic_mechanism'), [
+		event.recipes.createDeploying('kubejs:incomplete_sealed_mechanism', ['kubejs:incomplete_sealed_mechanism', CR('copper_nugget')]),
+		event.recipes.createDeploying('kubejs:incomplete_sealed_mechanism', ['kubejs:incomplete_sealed_mechanism', TE('cured_rubber')])
+	]).transitionalItem('kubejs:incomplete_sealed_mechanism').loops(2)
   //Precision
 }
+
 
 function createStuff(event){
 
@@ -335,6 +370,26 @@ function basicMechanismRecipes(event){
     S: CR('spout'),
     I: F('#plates/iron')
   })
+
+  //Water Wheel
+  event.shaped(CR('water_wheel', 1), [
+    'PPP',
+    'PLP',
+    'PPP'
+  ], {
+    P: MC('#planks'),
+    L: CR('large_cogwheel')
+  })
+  //Large Water Wheel
+  event.shaped(CR('large_water_wheel', 1), [
+    'PAP',
+    'ALA',
+    'PAP'
+  ], {
+    A: CR('andesite_alloy'),
+    P: MC('#planks'),
+    L: CR('water_wheel')
+  })
 }
 
 /**
@@ -399,11 +454,11 @@ function sifting(event) {
  // siftingRecipie(event,CS('andesite_mesh'),MC('gravel'),[{item:TE("iron_dust"),chance:0.1},{item:MC("flint"),chance:0.9}])
   siftingRecipie(event,CS('andesite_mesh'),MC('gravel'),
   [
-    {item:TE("iron_dust"),chance:0.1},
-    {item:KJ("zinc_dust"),chance:0.1},
-    {item:TE("copper_dust"),chance:0.1},
-    {item:TE("gold_dust"),chance:0.05},
-    {item:MC("flint"),chance:0.9}
+    {item:TE("iron_dust",2),chance:0.12},
+    {item:KJ("zinc_dust"),chance:0.08},
+    {item:TE("copper_dust"),chance:0.08},
+    {item:TE("gold_dust"),chance:0.02},
+    {item:MC("flint"),chance:0.5}
   ],false)
 
   siftingRecipie(event,CS('string_mesh'),MC('sand'),
@@ -412,6 +467,11 @@ function sifting(event) {
     {item:MC("flint"),chance:0.05}
   ],true)
 
+  siftingRecipie(event,CS('andesite_mesh'),MC('red_sand'),
+  [
+    {item:TE("gold_dust"),chance:0.1},
+    {item:MC("dead_bush"),chance:0.05},
+  ],true)
 }
 
 function farmersdelight(event){
@@ -440,9 +500,21 @@ function farmersdelight(event){
 
 }
 
-
-
 function rubberMatters(event) {
+  //Arboreal Tree Extractor fix
+  
+	event.shaped(TE('device_tree_extractor'), [
+		'PAP',
+		'GBG',
+    'PAP'
+	], {
+		A: CR('fluid_pipe'),
+    B: MC('bucket'),
+    P: MC('#planks'),
+    G: F('#glass')
+	})
+
+
 	let overrideTreeOutput = (id, trunk, leaf) => {
 		event.remove({ id: id })
 		event.custom({
@@ -469,7 +541,11 @@ function rubberMatters(event) {
 		S: TE('cured_rubber')
 	})
 
-	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), F("#vines", 4)])
+
+//	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), F("#vine", 4)])
+	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), MC("#vine", 4)])
+	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), CH("#vine", 4)])
+	
 	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(MC('water'), 250), '4x #minecraft:flowers'])
 	event.recipes.createCompacting('1x ' + TE("rubber"), [Fluid.of(TE('resin'), 250)])
 
@@ -498,7 +574,16 @@ function andesiteAlloy(event){
   //Mixer
   event.recipes.create.mixing(CR('andesite_alloy'),[MC('andesite'), AP('algal_brick'),MC('iron_nugget')])
 }
+function woodProcessing(event){
+  // let planks = [MC('oak_planks'), MC('spruce_planks'), MC('birch_planks'), MC('jungle_planks'), MC('acacia_planks'), MC('dark_oak_planks'), MC('crimson_planks'), MC('warped_planks')]
 
+  // for(var i=0; i<planks.length;i++){
+  //   let sawdust =  Item.of(TE('sawdust')).withChance(0.25)
+  //   event.replaceOutput({type:"create:cutting"}, planks[i], [planks[i],sawdust])
+  // }
+
+  //event.recipes.create.cutting([MC('#planks'), Item.of(TE('sawdust')).withChance(0.25),Item.of(TE('sawdust')).withChance(0.25)], MC('#logs'))
+}
 
 function oreProcessing(event){
   //Remove existing ore recipies
@@ -518,10 +603,10 @@ function oreProcessing(event){
  // event.smelting([MC('copper_nugget'),MC('copper_nugget')],KJ('copper_dust'))
 
   //Washing
-  event.recipes.create.splashing([MC('iron_nugget'),Item.of(MC('iron_nugget')).withChance(0.25)],TE('iron_dust'))
-  event.recipes.create.splashing([CR('zinc_nugget'),Item.of(CR('zinc_nugget')).withChance(0.25)],KJ('zinc_dust'))
-  event.recipes.create.splashing([MC('gold_nugget'),Item.of(MC('gold_nugget')).withChance(0.25)],TE('gold_dust'))
-  event.recipes.create.splashing([CR('copper_nugget'),Item.of(CR('copper_nugget')).withChance(0.25),Item.of(MC('clay_ball')).withChance(0.25)],TE('copper_dust'))
+  event.recipes.create.splashing([MC('iron_nugget'),Item.of(MC('iron_nugget')).withChance(0.5)],TE('iron_dust'))
+  event.recipes.create.splashing([CR('zinc_nugget'),Item.of(CR('zinc_nugget')).withChance(0.5)],KJ('zinc_dust'))
+  event.recipes.create.splashing([MC('gold_nugget'),Item.of(MC('gold_nugget')).withChance(0.5)],TE('gold_dust'))
+  event.recipes.create.splashing([CR('copper_nugget'),Item.of(CR('copper_nugget')).withChance(0.5)],TE('copper_dust'))
 
   //Iron ores
   event.remove({input: MC('#iron_ores'), output: [MC('iron_ingot')]})
