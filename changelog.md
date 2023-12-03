@@ -35,6 +35,7 @@
 - Added Immersive Weathering bark as a 50% chance to drop when using mechanical saw to strip logs
 - Added wood slab recipe to mechanical saw for most woods
 - Removed Origins mod and related mods
+- Lapis Lazuli can now be made from Apatite
 
 # 0.1.2c
 
