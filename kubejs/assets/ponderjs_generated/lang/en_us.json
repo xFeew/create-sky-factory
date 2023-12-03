@@ -1,1 +1,9 @@
-{}
+{
+  "kubejs.ponder.tag.custom_generators": "Custom generators",
+  "kubejs.ponder.tag.custom_generators.description": "Special block placement to achieve different results",
+  "kubejs.ponder.custom_generators.header": "Custom Generator.",
+  "kubejs.ponder.custom_generators.text_1": "This setup does not require water",
+  "kubejs.ponder.custom_generators.text_2": "Place Smooth Quartz next to a lava source",
+  "kubejs.ponder.custom_generators.text_3": "This setup will change the generator output to Diorite",
+  "kubejs.ponder.custom_generators.text_4": "This setup will change the generator output to Granite"
+}

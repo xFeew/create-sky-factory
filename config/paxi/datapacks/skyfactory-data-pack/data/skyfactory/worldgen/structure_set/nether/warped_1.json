@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:nether/warped_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1734514,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:nether/triple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 78313,
+    "spacing": 10,
+    "separation": 2,
+    "type": "minecraft:random_spread"
+  }
+}

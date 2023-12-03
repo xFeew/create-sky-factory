@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/wild_cucumber",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 5747527,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

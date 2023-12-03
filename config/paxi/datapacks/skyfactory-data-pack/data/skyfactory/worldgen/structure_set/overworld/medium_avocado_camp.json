@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/medium_avocado_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 824562472,
+    "spacing": 80,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

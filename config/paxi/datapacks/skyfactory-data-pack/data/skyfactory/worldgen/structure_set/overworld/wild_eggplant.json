@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/wild_eggplant",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 4623461,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

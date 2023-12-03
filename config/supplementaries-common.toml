@@ -183,7 +183,7 @@
 
 [building]
 	daub = true
-	ash_bricks = true
+	ash_bricks = false
 	lapis_bricks = true
 	deepslate_lamp = true
 	end_stone_lamp = true
@@ -212,6 +212,7 @@
 	doormat = true
 	flint_block = true
 	candle_holder = true
+	altimeter = false
 
 	[building.blackboard]
 		enabled = true
@@ -265,14 +266,14 @@
 		crystal_enchanting = 3
 
 	[building.ash]
-		enabled = true
+		enabled = false
 		#Burnable blocks will have a chance to create ash layers when burned
-		ash_from_fire = true
+		ash_from_fire = false
 		#Allows rain to wash away ash layers overtime
-		rain_wash_ash = true
+		rain_wash_ash = false
 
 		[building.ash.basalt_ash]
-			enabled = true
+			enabled = false
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 1000
 			attempts_per_patch = 36
@@ -313,6 +314,7 @@
 	antique_ink = true
 	candy = true
 	stasis = true
+	altimeter = true
 
 	[tools.quiver]
 		enabled = true
@@ -400,6 +402,12 @@
 		stasis_deceleration = 0.9625
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+
+	[tools.slice_map]
+		enabled = true
+		#Multiplier that will be applied by slice maps to lower their range compared to normal maps
+		#Range: 0.0 ~ 1.0
+		range_multiplier = 0.25
 
 #General settings
 [general]
@@ -524,6 +532,12 @@
 		#Increases any search done with a quoll to be at least this radius. Vanilla locate is 100 while buried treasure is 50 chunks for reference
 		#Range: 0 ~ 500
 		minimum_search_radius = 100
+		#Select a random structure to look for instead of iterating through all of the ones in the tag returning the closest. Turning on will make ones that have diff structures (aka all different ruined portals) show up more. On could take much more time to compute
+		random_adventurer_maps_select_random_structure = true
+		#Shows a death marker on your map when you die. Requires a recovery compass in player inventory or similar
+		#Allowed Values: OFF, WITH_COMPASS, ALWAYS
+		death_marker = "WITH_COMPASS"
+		colored_map = true
 
 	[tweaks.ceiling_banners]
 		#Allow banners to be placed on ceilings

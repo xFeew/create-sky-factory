@@ -52,6 +52,17 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
+  "delightful": {
+    "crop_progress": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -62,9 +73,9 @@
   },
   "create": {
     "filter": true,
+    "backtank_capacity": true,
     "goggles.requires_goggles": true,
     "goggles": true,
-    "copper_backtank": true,
     "blaze_burner": true,
     "exact_block": true,
     "crafting_blueprint": true,

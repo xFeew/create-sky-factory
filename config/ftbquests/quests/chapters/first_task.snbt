@@ -11,17 +11,19 @@
 		{
 			dependencies: ["1DE9BA607DFB3ED5"]
 			description: [
-				"This modpack was created to spice up Create mod."
+				"Hello fellow engineer."
 				""
-				"This is not going to be your default experience. "
+				"This modpack is inspired by &6Create: Above \\& Beyond&r, so you might find things simmilar."
+				""
+				"The sandbox has been turned upside down."
 				""
 				"The difficulty has been turned up, the recipies got more advanced and difficult than ever."
 				""
-				"Automation is the key."
+				"&bAutomation&r is the key to &6Progression&r."
 				""
 				"Be prepared for challenges and grind."
 			]
-			icon: "artifacts:crystal_heart"
+			icon: "minecraft:stone"
 			id: "1DE8AE5511F31900"
 			rewards: [{
 				id: "2A96CF2A6AB257D8"
@@ -40,13 +42,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1DE8AE5511F31900"]
+			dependencies: ["795BB58473BD2B1C"]
 			description: [
-				"- &6The Sky Factory Guide&r provides a path to follow"
+				"- &6The Sky Factory Guide&r provides a path to follow, this is the main questing path"
 				""
-				"- &6The Market&r let's you spend your money here for that sweet loot"
+				"- &6The Lifesavers&r if you do get into trouble you can look for help here"
 				""
-				"- &6The Lifesavers&r if you do get stuck you can look for help here"
+				"- &6Shipments&r is a way to import needed resources, they come in with a price"
+				""
+				"- &6The Market&r is a place where you can make a one time purchase on various items"
+				""
+				"- &6Ore Processing&r shows the steps on how to refine raw ores into more usable material"
 			]
 			icon: "ftbquests:book"
 			id: "6C02703B9F38D7B5"
@@ -61,12 +67,12 @@
 				type: "checkmark"
 			}]
 			title: "Quest Content Overwiew"
-			x: -2.0d
-			y: 2.0d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6C02703B9F38D7B5"]
-			description: [""]
+			description: ["Thats it, go ahead and check other chapters."]
 			icon: "minecraft:gold_block"
 			id: "7975DD9342102C0A"
 			rewards: [{
@@ -81,31 +87,74 @@
 				type: "checkmark"
 			}]
 			title: "Good luck!"
-			x: 0.0d
-			y: 4.5d
+			x: 2.5d
+			y: 3.125d
 		}
 		{
 			description: [
 				"&lThis modpack is still in development&r"
 				""
+				"Please remember some parts of this modpack are not yet finished."
+				"Some stuff might not be accesible, some might cause problems or even crashes."
 				""
-				"Please remeber some stuff might break, some might not be accessible, some recipies might be incorrect or cause confilcts."
+				"I'm sorry for any issues you come across, reporting them to our discord will help in fixing them sooner. "
+				"Thank you."
 				""
-				"&lA lot of the stuff is not yet finished.&r"
+				"&bhttp://dsc.gg/thehill&r"
 			]
 			icon: "forbidden_arcanus:test_tube"
 			id: "1DE9BA607DFB3ED5"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "Please note."
 			tasks: [{
 				id: "69807310B8987F89"
 				type: "checkmark"
 			}]
-			title: "BETA"
+			title: "Still in Development"
 			x: 0.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["0DC7FCF05CF9516A"]
+			description: [
+				"The Questing system is completely optional however it is not recommended to skip it."
+				""
+				"You can always come back here if you get stuck"
+			]
+			icon: "minecraft:grass_block"
+			id: "795BB58473BD2B1C"
+			shape: "hexagon"
+			tasks: [{
+				id: "56CA9763A5F189E0"
+				type: "checkmark"
+			}]
+			title: "Completely optional"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1DE8AE5511F31900"]
+			description: [
+				"As you might noticed this is not an ordinary world, it is centered around floating islands."
+				""
+				"End dimension generates as usual, Nether and Overworld is build on several types of floating islands."
+				""
+				"Some of those islands are like parts of biome ripped out, some are only made out of usefull resources, other have buildings or ruins."
+				""
+				"There are also villages!"
+			]
+			icon: "minecraft:dirt"
+			id: "0DC7FCF05CF9516A"
+			shape: "hexagon"
+			tasks: [{
+				id: "16D2C167F973B559"
+				type: "checkmark"
+			}]
+			title: "Stepping up the difficulty"
+			x: -1.5d
+			y: 1.5d
+		}
 	]
-	title: "Welcome"
+	title: "&2 Welcome"
 }

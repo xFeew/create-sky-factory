@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/medium_abandoned_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 24822435,
+    "spacing": 80,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

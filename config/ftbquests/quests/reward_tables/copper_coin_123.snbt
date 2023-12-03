@@ -4,9 +4,9 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ item: "thermal:copper_coin" }
-		{ count: 2, item: "thermal:copper_coin" }
-		{ count: 3, item: "thermal:copper_coin" }
+		{ icon: "thermal:silver_coin", item: "thermal:silver_coin" }
+		{ count: 2, item: "thermal:silver_coin" }
+		{ count: 3, item: "thermal:silver_coin" }
 	]
 	title: "copper_coin_123"
 }

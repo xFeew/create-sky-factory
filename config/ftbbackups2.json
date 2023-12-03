@@ -27,7 +27,7 @@
 	   More info here
 	   (http://www.cronmaker.com)
 	*/
-	"backup_cron": "0 */30 * * * ?",
+	"backup_cron": "0 0 * * * ?",
 	// Time between manual backups using the command
 	"manual_backups_time": 0,
 	// Only run a backup if a player has been online since the last backup
@@ -46,7 +46,7 @@
 	*/
 	"additional_files": [],
 	// Display file size in backup message
-	"display_file_size": false,
+	"display_file_size": true,
 	// backup location
 	"backup_location": ".",
 	// Specify the backup format. Valid options are ZIP and DIRECTORY

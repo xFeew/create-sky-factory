@@ -1,0 +1,346 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "f3r_compression"
+	group: "5D641ED9208DC44C"
+	icon: "pneumaticcraft:pneumatic_cylinder"
+	id: "33A4977CC54AAD99"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"55CB770D54B56114"
+				"7C52E6D222206DCE"
+			]
+			icon: "pneumaticcraft:pneumatic_cylinder"
+			id: "76B85C9288C2BC0F"
+			tasks: [
+				{
+					id: "5FB8CBFE9124E8D6"
+					item: "pneumaticcraft:pneumatic_cylinder"
+					type: "item"
+				}
+				{
+					id: "6B4F0B8D355E1DCF"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["76B85C9288C2BC0F"]
+			id: "2C33BE9026DC8369"
+			rewards: [
+				{
+					count: 2
+					id: "7E0741472AA65547"
+					item: "kubejs:pneumatic_mechanism"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EC76DB94A84E03C"
+					item: "pneumaticcraft:pneumatic_cylinder"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "78D745012D9248D4"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7086919FFBEFAD42"
+				item: "kubejs:pneumatic_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["0D084CA65EE114D7"]
+			icon: "pneumaticcraft:plastic"
+			id: "7C52E6D222206DCE"
+			tasks: [
+				{
+					id: "532E8149583B1745"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+				{
+					id: "06D8D2E04E3901E1"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"024F1105077CABDA"
+				"5F925BB336B706DC"
+			]
+			icon: "pneumaticcraft:plastic_bucket"
+			id: "0D084CA65EE114D7"
+			tasks: [
+				{
+					id: "00321C65181D2FCB"
+					item: "pneumaticcraft:plastic_bucket"
+					type: "item"
+				}
+				{
+					id: "3BCEB4C3110573A5"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1E65051F75C0DE15"]
+			description: [
+				"Air can be a really good source of power, but before we get into that you need some refining."
+				""
+				"In this chapter you will learn how to process Oil into different flammable liquids and some high-tier items."
+				""
+				""
+				"Work in progress."
+			]
+			hide: true
+			icon: "kubejs:pneumatic_mechanism"
+			id: "6FC5030241D66E63"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "580529DF752C9916"
+				type: "checkmark"
+			}]
+			title: "Power Of Air"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["250784B047F03F56"]
+			description: ["Gas in a bucket?"]
+			id: "5F925BB336B706DC"
+			tasks: [{
+				id: "4FD4354FC1303996"
+				item: "pneumaticcraft:lpg_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["250784B047F03F56"]
+			id: "2D1F46CE213A9EE8"
+			tasks: [{
+				id: "68E203F9F5EDF99F"
+				item: "pneumaticcraft:diesel_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["250784B047F03F56"]
+			id: "565E4BB313CA428B"
+			tasks: [{
+				id: "76BB31238D16C85E"
+				item: "pneumaticcraft:gasoline_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["250784B047F03F56"]
+			id: "772D0806023C9764"
+			tasks: [{
+				id: "664F67095E937BEF"
+				item: "pneumaticcraft:kerosene_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["44C32D38EAA29A9B"]
+			description: ["Stack &6Refinery Outputs&r on top of a &6Refinery Controller&r and heat it up."]
+			id: "250784B047F03F56"
+			tasks: [{
+				id: "5C3C0870B3ED8B3C"
+				item: "pneumaticcraft:refinery_output"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6FC5030241D66E63"]
+			hide_dependency_lines: true
+			icon: "minecraft:twisting_vines"
+			id: "5A11C26B5987615D"
+			tasks: [
+				{
+					id: "6A98B315D7F8DEB2"
+					item: "minecraft:twisting_vines"
+					type: "item"
+				}
+				{
+					id: "3CAEA5ECE4FC1156"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FC5030241D66E63"]
+			hide_dependency_lines: true
+			icon: "minecraft:weeping_vines"
+			id: "4B1A44BA9E75E648"
+			tasks: [
+				{
+					id: "19574C2195E41722"
+					item: "minecraft:weeping_vines"
+					type: "item"
+				}
+				{
+					id: "18219A1BA595301E"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5A11C26B5987615D"
+				"4B1A44BA9E75E648"
+			]
+			description: ["This viscous fluid can be refined further."]
+			icon: "pneumaticcraft:oil_bucket"
+			id: "44C32D38EAA29A9B"
+			tasks: [
+				{
+					id: "3E7EECA0D547E124"
+					item: "pneumaticcraft:oil_bucket"
+					type: "item"
+				}
+				{
+					id: "33310884A86C65AD"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6FC5030241D66E63"]
+			description: ["Good ol' friend."]
+			hide_dependency_lines: true
+			icon: "minecraft:iron_ingot"
+			id: "2804E665745624D2"
+			tasks: [
+				{
+					id: "7482B9107F344BC4"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "18F5F8EBC6A854ED"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2804E665745624D2"]
+			description: [
+				"Compressed form of Iron, either by explosion or pressure."
+				""
+				"Shouldn't that be smaller after compression?"
+			]
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "55CB770D54B56114"
+			tasks: [
+				{
+					id: "615FFD7B74CF5120"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					type: "item"
+				}
+				{
+					id: "15E6AB642FBA17A6"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6FC5030241D66E63"]
+			description: ["You can use charcoal too."]
+			hide_dependency_lines: true
+			icon: "minecraft:coal"
+			id: "0BD178E991F27A4A"
+			tasks: [
+				{
+					id: "6DFFCA50C8EB178A"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "0AD235ADD22108A3"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55CB770D54B56114"]
+			icon: "pneumaticcraft:pressure_tube"
+			id: "64285E1A7874A14D"
+			tasks: [
+				{
+					id: "746B48A037C22FD1"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+				{
+					id: "6A462664ACC7BE36"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0BD178E991F27A4A"]
+			icon: "kubejs:coal_dust"
+			id: "024F1105077CABDA"
+			tasks: [
+				{
+					id: "5A6B317ED7A7FB80"
+					item: "kubejs:coal_dust"
+					type: "item"
+				}
+				{
+					id: "5CDAC39E9AEB242A"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+	]
+	title: "&f3&r Power Of Air"
+}

@@ -1,1 +1,24 @@
-[]
+[
+    {
+        "mob": [
+            "minecraft:zombie",
+            "minecraft:skeleton",
+            "minecraft:spider"
+        ],
+        "persecond": 0.5,
+        "attempts": 20,
+        "amount": {
+            "minimum": 2,
+            "maximum": 5
+        },
+        "conditions": {
+            "dimension": "minecraft:mushroom_fields",
+            "norestrictions": true,
+            "mindist": 25,
+            "maxdist": 100,
+            "minheight": 15,
+            "maxheight": 200,
+            "maxthis": 200
+        }
+    }
+]

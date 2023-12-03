@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:nether/soul_bone",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 464613,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

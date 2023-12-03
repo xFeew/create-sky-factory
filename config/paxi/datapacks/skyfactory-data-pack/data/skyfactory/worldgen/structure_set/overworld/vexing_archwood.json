@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/vexing_archwood",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 13464132,
+    "spacing": 90,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

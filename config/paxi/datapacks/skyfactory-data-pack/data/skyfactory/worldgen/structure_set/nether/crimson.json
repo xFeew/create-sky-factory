@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:nether/crimson",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 12156124,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

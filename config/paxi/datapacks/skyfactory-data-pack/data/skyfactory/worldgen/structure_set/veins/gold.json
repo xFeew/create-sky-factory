@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:veins/gold",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 9061254,
+    "spacing": 15,
+    "separation": 1,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:veins/zinc",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 690823,
+    "spacing": 10,
+    "separation": 1,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,579 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "electricity"
+	group: "5D641ED9208DC44C"
+	icon: "createaddition:copper_spool"
+	id: "6EACBF1312566447"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["68A679372FAAF724"]
+			description: ["Work in progress."]
+			hide: true
+			icon: "kubejs:microcontroller"
+			id: "6DBC9DF068FD8CB4"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "56268367A2B500D1"
+				type: "checkmark"
+			}]
+			title: "Electricity"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D1C377794C7A5AA"]
+			icon: "pneumaticcraft:printed_circuit_board"
+			id: "73A63EAFD8B6E9C8"
+			tasks: [
+				{
+					id: "5C2BD42EA9203686"
+					item: "pneumaticcraft:printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "5E11B3A9FF9BDC19"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"6E50FEB7F3C03D77"
+				"57CAF53A3443FF78"
+				"2FAD2084F8CBCBB0"
+				"3FA6ED36A37675AD"
+			]
+			icon: "pneumaticcraft:empty_pcb"
+			id: "1D9B78C064F545CA"
+			tasks: [
+				{
+					id: "12057D8F332FDE1A"
+					item: "pneumaticcraft:empty_pcb"
+					type: "item"
+				}
+				{
+					id: "31A79C4DC47DDBDC"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"24AE0DA03DA320BC"
+				"18CC9DA6BEB50BBC"
+				"6CF75562B31A32F2"
+			]
+			id: "0077961620A6ACE4"
+			tasks: [{
+				id: "2DED1ADDB5F27EC4"
+				item: "pneumaticcraft:transistor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"6CF75562B31A32F2"
+				"6850A2B374DA3F4C"
+				"18CC9DA6BEB50BBC"
+			]
+			id: "7823F21BC7B82F7C"
+			tasks: [{
+				id: "205F0DB503B55187"
+				item: "pneumaticcraft:capacitor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3CAF3B0B8A35115E"]
+			id: "01A117B45F77A946"
+			tasks: [{
+				id: "4AA0375BC3A96205"
+				item: "createaddition:copper_wire"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["01A117B45F77A946"]
+			id: "43CBBC5E93D48185"
+			tasks: [{
+				id: "388C9CE39D9B3277"
+				item: "createaddition:spool"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["43CBBC5E93D48185"]
+			id: "6850A2B374DA3F4C"
+			tasks: [{
+				id: "7248BD9DA8912DA7"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"70FAE783E6D717CC"
+				"4E76A16AA2A168A1"
+			]
+			id: "3CAF3B0B8A35115E"
+			tasks: [{
+				id: "38148CD6B7AE2040"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1D9B78C064F545CA"]
+			description: ["Sometimes mistakes happen."]
+			id: "57E21DD8EA8F6160"
+			tasks: [{
+				id: "5611759895ABB954"
+				item: "pneumaticcraft:failed_pcb"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["73A63EAFD8B6E9C8"]
+			icon: "pneumaticcraft:module_expansion_card"
+			id: "79BDED7FCE0BF13F"
+			tasks: [
+				{
+					id: "564FD9E26D9FCAF5"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+				{
+					id: "644756C8CE5B651B"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "4E76A16AA2A168A1"
+			tasks: [{
+				id: "1DE85EBA5F42E482"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "18CC9DA6BEB50BBC"
+			tasks: [{
+				id: "32578AAF2B51FFCD"
+				item: "pneumaticcraft:plastic_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3CAF3B0B8A35115E"]
+			id: "24AE0DA03DA320BC"
+			tasks: [{
+				id: "22C03AAFB2F78B7B"
+				item: "createaddition:iron_wire"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "70FAE783E6D717CC"
+			tasks: [{
+				id: "1277A5FE5428FAC2"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "6CF75562B31A32F2"
+			tasks: [{
+				id: "064EE7440AA267B2"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1D9B78C064F545CA"
+				"7823F21BC7B82F7C"
+				"0077961620A6ACE4"
+			]
+			icon: "pneumaticcraft:unassembled_pcb"
+			id: "1D1C377794C7A5AA"
+			tasks: [
+				{
+					id: "5AE31859CC26087C"
+					item: "pneumaticcraft:unassembled_pcb"
+					type: "item"
+				}
+				{
+					id: "39FCDC8F3CE32C68"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0C271DB02C18EEC7"
+				"291947895342702E"
+				"2612992DB796B81B"
+			]
+			id: "3FA6ED36A37675AD"
+			tasks: [{
+				id: "489157D115DDB16E"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			icon: "thermal:niter_dust"
+			id: "376D1AE4CC86D827"
+			tasks: [
+				{
+					id: "2CC1F7A104C893D7"
+					item: "thermal:niter_dust"
+					type: "item"
+				}
+				{
+					id: "1003F97D8A89271A"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"30035E0B9AD4B427"
+				"6B1B5CFFD1DC3707"
+			]
+			icon: "kubejs:sulphuric_acid_bucket"
+			id: "011FA78366FFAA2A"
+			tasks: [
+				{
+					id: "447F78D7FD73CED4"
+					item: "kubejs:sulphuric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "33EA3EBAD4B8D50C"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"011FA78366FFAA2A"
+				"376D1AE4CC86D827"
+			]
+			icon: "kubejs:nitric_acid_bucket"
+			id: "0C271DB02C18EEC7"
+			tasks: [
+				{
+					id: "07E1574FE86180A6"
+					item: "kubejs:nitric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "139ADA5FA80D3333"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			icon: "thermal:apatite_dust"
+			id: "2612992DB796B81B"
+			tasks: [
+				{
+					id: "07C86E14442C1ECE"
+					item: "thermal:apatite_dust"
+					type: "item"
+				}
+				{
+					id: "09D886D366AEE774"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			icon: "thermal:iron_dust"
+			id: "291947895342702E"
+			tasks: [
+				{
+					id: "1E580DC50F82B6A4"
+					item: "thermal:iron_dust"
+					type: "item"
+				}
+				{
+					id: "68FA395AA34F5CFA"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			icon: "thermal:sulfur_dust"
+			id: "6B1B5CFFD1DC3707"
+			tasks: [
+				{
+					id: "0652464632339C90"
+					item: "thermal:sulfur_dust"
+					type: "item"
+				}
+				{
+					id: "5FA6341670F46F28"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			description: [
+				"Road to Etching Acid starts with plain Water."
+				""
+				"This is the most complex way to make Etching Acid, there are few others if you have the materials."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:water_bucket"
+			id: "30035E0B9AD4B427"
+			tasks: [
+				{
+					id: "4E1B090161835E95"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "17B034D357F894CA"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "6E50FEB7F3C03D77"
+			tasks: [{
+				id: "56222A70C4FF2364"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "57CAF53A3443FF78"
+			tasks: [{
+				id: "274FBB8DDF5D44CE"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			icon: "minecraft:redstone"
+			id: "2FAD2084F8CBCBB0"
+			tasks: [
+				{
+					id: "6F46B08114D07CF8"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "3BF65E76C98CB72C"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "5B098B003628178C"
+			tasks: [{
+				id: "1874A9DA3BDC1A5B"
+				item: "pneumaticcraft:network_api"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "561AB2E27BC6787C"
+			tasks: [{
+				id: "1F7EA4E6ABF07E13"
+				item: "pneumaticcraft:network_data_storage"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "0147FFFBBF44BE42"
+			tasks: [{
+				id: "00BF6F215EB7E87C"
+				item: "pneumaticcraft:network_io_port"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "091AE1198E9E8A18"
+			tasks: [{
+				id: "3417C274328B3350"
+				item: "pneumaticcraft:network_registry"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "40F2C28A9213D4B3"
+			tasks: [{
+				id: "024F0B1C6A68824E"
+				item: "pneumaticcraft:network_node"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6DBC9DF068FD8CB4"]
+			hide_dependency_lines: true
+			id: "75488C0B5167CC30"
+			tasks: [{
+				id: "38BA8EC7417581A5"
+				item: "pneumaticcraft:diagnostic_subroutine"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"5B098B003628178C"
+				"561AB2E27BC6787C"
+				"0147FFFBBF44BE42"
+				"40F2C28A9213D4B3"
+				"091AE1198E9E8A18"
+				"75488C0B5167CC30"
+				"79BDED7FCE0BF13F"
+			]
+			icon: "kubejs:unpowered_microcontroller"
+			id: "66EEBC14C0977307"
+			shape: "circle"
+			tasks: [
+				{
+					id: "2CE736AD64F5B418"
+					item: "kubejs:unpowered_microcontroller"
+					type: "item"
+				}
+				{
+					id: "7F244A4667C68C8B"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["66EEBC14C0977307"]
+			description: ["Put some life into it."]
+			icon: "kubejs:microcontroller"
+			id: "0337B8583E80FAFF"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3F81581DC2B5334B"
+					item: "kubejs:microcontroller"
+					type: "item"
+				}
+				{
+					id: "070F971E24EE4126"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 18.5d
+		}
+	]
+	title: "&f4&r Electricity"
+}

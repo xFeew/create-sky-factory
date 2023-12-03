@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/wild_corn",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 2351172,
+    "spacing": 15,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

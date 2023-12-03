@@ -13,7 +13,7 @@
 			icon: "create:sweet_roll"
 			id: "4BD7BE4C158C5D36"
 			rewards: [{
-				count: 15
+				count: 16
 				id: "260B88D3B88E1826"
 				item: "create:sweet_roll"
 				type: "item"
@@ -32,6 +32,7 @@
 			icon: "delightful:lavender_tea"
 			id: "2BC8385F81277E34"
 			rewards: [{
+				count: 4
 				id: "28240CBCB3C4C8D6"
 				item: "delightful:lavender_tea"
 				type: "item"
@@ -49,9 +50,9 @@
 			description: [
 				"This section contains quests which can be completed without the need of any special requirements."
 				""
-				"If you need anything just take it, but remeber you can complete the quests &lonly once&r."
+				"If you need anything just take it, but remeber you can do that &lonly once&r."
 			]
-			icon: "artifacts:crystal_heart"
+			icon: "minecraft:apple"
 			id: "5BB556AE481B787D"
 			shape: "hexagon"
 			size: 1.5d
@@ -64,5 +65,5 @@
 			y: -0.5d
 		}
 	]
-	title: "Lifesavers"
+	title: "&6 Lifesavers"
 }

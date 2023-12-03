@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/wild_tomato",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 13451346,
+    "spacing": 15,
+    "separation": 5,
+    "type": "minecraft:random_spread"
+  }
+}

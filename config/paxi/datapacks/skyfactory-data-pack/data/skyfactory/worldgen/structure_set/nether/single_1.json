@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:nether/single_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 3151345,
+    "spacing": 5,
+    "separation": 2,
+    "type": "minecraft:random_spread"
+  }
+}

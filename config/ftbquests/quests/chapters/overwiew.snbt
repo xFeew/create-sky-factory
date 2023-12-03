@@ -1,0 +1,309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overwiew"
+	group: "5D641ED9208DC44C"
+	icon: "minecraft:map"
+	id: "529502E2752A52F5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Here you can take a look at the milestones and the whole journey to The End."]
+			icon: "minecraft:grass_block"
+			id: "774F8D32B7907C25"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4208B1B512C04470"
+				type: "checkmark"
+			}]
+			title: "From nothing..."
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["774F8D32B7907C25"]
+			icon: "create:andesite_alloy"
+			id: "2A6996DFF90BFBB0"
+			tasks: [{
+				disable_toast: true
+				id: "0AFDF875FEF491DB"
+				type: "checkmark"
+			}]
+			title: "Ground Zero"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A6996DFF90BFBB0"]
+			id: "54ABAA2A0777C7B2"
+			shape: "square"
+			tasks: [{
+				id: "46DEF18FD63CC476"
+				item: "kubejs:basic_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19B362C3968524CA"]
+			id: "04115A12147BEBFA"
+			shape: "square"
+			tasks: [{
+				id: "192A7AE432D38A77"
+				item: "kubejs:train_mechanism"
+				type: "item"
+			}]
+			title: "Train Mechanism"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60B1C08500248C9F"]
+			icon: "create:precision_mechanism"
+			id: "273EEE1CEE203A80"
+			shape: "square"
+			tasks: [{
+				id: "78DFA2285FB12459"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35893C5E6A334FFA"]
+			id: "2CBD47782921A3B0"
+			shape: "square"
+			tasks: [{
+				id: "574CE17054D8953B"
+				item: "create_things_and_misc:vibration_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["065AE87363A85093"]
+			id: "62920B16906F0D95"
+			shape: "square"
+			tasks: [{
+				id: "401273BDB76B869B"
+				item: "kubejs:sealed_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2654026ADA83741D"]
+			id: "6310E4B36FA95454"
+			shape: "square"
+			tasks: [{
+				id: "6F099AD6A64FAE6C"
+				item: "kubejs:shadow_mechanism"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["65CCFEAECFFBC6B9"]
+			id: "26C43D7932F41101"
+			shape: "square"
+			tasks: [{
+				id: "70FF0EF3EADA16DC"
+				item: "kubejs:magmatic_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			icon: "chipped:crying_obsidian_scales"
+			id: "3AC9BE7AA08E3D6C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "65AC5411F6FC5351"
+				type: "checkmark"
+			}]
+			title: "...to Everything."
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54ABAA2A0777C7B2"]
+			icon: "thermal:cured_rubber"
+			id: "065AE87363A85093"
+			tasks: [{
+				disable_toast: true
+				id: "63C145D59C8D48D2"
+				type: "checkmark"
+			}]
+			title: "Rubber Tycoon"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["54ABAA2A0777C7B2"]
+			icon: "create:electron_tube"
+			id: "60B1C08500248C9F"
+			tasks: [{
+				disable_toast: true
+				id: "5744ECC02F37EB1D"
+				type: "checkmark"
+			}]
+			title: "Seeking Precision"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "create:chromatic_compound"
+				tag: { }
+			}
+			id: "650017C03A26A5C7"
+			tasks: [{
+				id: "0713547374E6633E"
+				item: {
+					Count: 1b
+					id: "create:chromatic_compound"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["650017C03A26A5C7"]
+			icon: "create:shadow_steel"
+			id: "2654026ADA83741D"
+			tasks: [{
+				disable_toast: true
+				id: "2EB2A56798B64776"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["650017C03A26A5C7"]
+			icon: "create:refined_radiance"
+			id: "7154608DBF2604BF"
+			tasks: [{
+				disable_toast: true
+				id: "49C5DB12BD402749"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["273EEE1CEE203A80"]
+			icon: "minecraft:lava_bucket"
+			id: "65CCFEAECFFBC6B9"
+			tasks: [{
+				disable_toast: true
+				id: "7771BA36831B7451"
+				type: "checkmark"
+			}]
+			title: "Heat Source"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54ABAA2A0777C7B2"]
+			icon: "create:sturdy_sheet"
+			id: "19B362C3968524CA"
+			tasks: [{
+				disable_toast: true
+				id: "5DCAAFC18869153B"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68C25C6FB942337B"]
+			icon: "pneumaticcraft:capacitor"
+			id: "68A679372FAAF724"
+			tasks: [{
+				disable_toast: true
+				id: "23654E2B550EF4D6"
+				type: "checkmark"
+			}]
+			title: "Electricity"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E65051F75C0DE15"]
+			icon: "kubejs:pneumatic_mechanism"
+			id: "68C25C6FB942337B"
+			shape: "square"
+			tasks: [{
+				id: "6AD04071AED1CCBF"
+				item: "kubejs:pneumatic_mechanism"
+				type: "item"
+			}]
+			title: "Pneumatic Mechanism"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["273EEE1CEE203A80"]
+			icon: "pneumaticcraft:pneumatic_cylinder"
+			id: "1E65051F75C0DE15"
+			rewards: [{
+				id: "69676938EEE2D6EA"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				disable_toast: true
+				id: "18921998BCA010C0"
+				type: "checkmark"
+			}]
+			title: "Power of Air"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["273EEE1CEE203A80"]
+			icon: "minecraft:amethyst_shard"
+			id: "35893C5E6A334FFA"
+			tasks: [{
+				disable_toast: true
+				id: "7215D57F14F6BA0F"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68A679372FAAF724"]
+			id: "77AD12689A177DD9"
+			shape: "square"
+			tasks: [{
+				id: "02439A528509AB5B"
+				item: "kubejs:microcontroller"
+				type: "item"
+			}]
+			title: "Microcontroller"
+			x: 9.0d
+			y: 0.0d
+		}
+	]
+	title: "  &6The Journey"
+}

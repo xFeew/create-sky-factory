@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/cascading_archwood",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 7812434,
+    "spacing": 90,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

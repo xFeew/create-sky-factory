@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/medium_empty2",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 43262342,
+    "spacing": 12,
+    "separation": 4,
+    "type": "minecraft:random_spread"
+  }
+}

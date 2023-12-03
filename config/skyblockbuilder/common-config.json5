@@ -4,7 +4,7 @@
     "End": {
     
       // Should end generate as in default world type? [default: false]
-      "Default": false,
+      "Default": true,
       
       // Should the main island be generated as normal? [default: true]
       "mainIsland": true
@@ -131,7 +131,6 @@
         "robs_hot_air_balloons:gray_white_balloon",
         "robs_hot_air_balloons:green_white_balloon",
         "robs_floating_islands:desert_temple",
-        "robs_floating_islands:farmer_house",
         "robs_floating_islands:forest_camp",
         "robs_floating_islands:igloo",
         "robs_floating_islands:jungle",
@@ -158,12 +157,44 @@
         "minecraft:fortress",
         "skyvillages:skyvillage",
         "castle_in_the_sky:castle_in_the_sky",
-        "structory:bone",
-        "structory:copper",
-        "structory:gold",
-        "structory:iron",
-        "structory:tuff",
-        "structory:zinc",
+        "skyfactory:veins/bone",
+        "skyfactory:veins/copper",
+        "skyfactory:veins/gold",
+        "skyfactory:veins/iron",
+        "skyfactory:veins/tuff",
+        "skyfactory:veins/zinc",
+        "skyfactory:overworld/amethyst_sphere",
+        "skyfactory:overworld/wild_cabbage",
+        "skyfactory:overworld/wild_corn",
+        "skyfactory:overworld/wild_cucumber",
+        "skyfactory:overworld/wild_eggplant",
+        "skyfactory:overworld/wild_onion",
+        "skyfactory:overworld/wild_pig_carrot_potato",
+        "skyfactory:overworld/wild_rabbit",
+        "skyfactory:overworld/wild_rice",
+        "skyfactory:overworld/wild_salmonberry",
+        "skyfactory:overworld/wild_tomato",
+        "skyfactory:overworld/blazing_archwood",
+        "skyfactory:overworld/cascading_archwood",
+        "skyfactory:overworld/flourishing_archwood",
+        "skyfactory:overworld/vexing_archwood",
+        "skyfactory:overworld/medium_abandoned_camp",
+        "skyfactory:overworld/medium_avocado_camp",
+        "skyfactory:overworld/medium_empty2",
+        "skyfactory:overworld/medium_forest",
+        "skyfactory:overworld/medium_spider",
+        "skyfactory:nether/crimson_tree",
+        "skyfactory:nether/crimson",
+        "skyfactory:nether/single_1",
+        "skyfactory:nether/single_2",
+        "skyfactory:nether/soul_bone",
+        "skyfactory:nether/soul_empty",
+        "skyfactory:nether/soul_wart",
+        "skyfactory:nether/triple",
+        "skyfactory:nether/warped_1",
+        "skyfactory:nether/medium_nether_lava",
+        "skyfactory:nether/medium_nether_empty",
+        "skyfactory:nether/warped_tree"
       ]
     }
   },
@@ -172,6 +203,11 @@
   
     // Should players be able to create their own team? [default: false]
     "createOwnTeam": true,
+    
+    // Force the check if the world is skyblock
+    // This enables the commands in worlds without any skyblock dimension
+    // USE AT YOUR OWN RISK, NO SUPPORT FOR DEFAULT WORLDS WITH THIS ENABLED
+    "forceSkyblockCheck": false,
     
     // Should players be able to leave their team or invite others? [default: true]
     "selfManage": true,

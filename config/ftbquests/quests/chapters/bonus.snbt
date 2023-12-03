@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bonus"
+	group: "5D641ED9208DC44C"
+	icon: "minecraft:gold_block"
+	id: "778464551742B32D"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"59A2FFACC204FA30"
+				"71AD121EEB82C266"
+				"3A9886D3A4C2A3F3"
+			]
+			description: [
+				"You have completed the 3 base mechanism assemblies, as a reward you get a &5bonus&r chapter."
+				""
+				"Completing this chapter is completely optional but it grants you a few special gadgets that will help you move around the world."
+			]
+			hide: true
+			id: "5BA61845EE3D54CA"
+			tasks: [{
+				id: "50A70B079393314E"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			title: "Bonus!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BA61845EE3D54CA"]
+			description: [
+				"The Heat Engine isn't really good for an jetpack or exoskeleton due to material limitations, "
+				"however the &6Grappling Whisk&r may be one of the best options for early exploration."
+			]
+			id: "160F3917E07A9971"
+			tasks: [{
+				id: "39C2653AEB60FAC4"
+				item: "create_sa:heat_engine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BA61845EE3D54CA"]
+			description: [
+				"Encased Heat Engine in copper shell can withstand extra pressure making it ideal for hydraulics."
+				""
+				"A well suited engine for an jetpack, use it for short distances."
+			]
+			id: "627A489436FBD75E"
+			tasks: [{
+				id: "6C16F74C2974541F"
+				item: "create_sa:hydraulic_engine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BA61845EE3D54CA"]
+			description: ["The &6Steam Engine&r can provide high pressure steam to reach sky-high!"]
+			id: "14EF3D7E713CB162"
+			tasks: [{
+				id: "60D6F617D2FF414A"
+				item: "create_sa:steam_engine"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+	]
+	title: "   &5Bonus!&r"
+}

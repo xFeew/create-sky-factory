@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/wild_rabbit",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 623713346,
+    "spacing": 20,
+    "separation": 15,
+    "type": "minecraft:random_spread"
+  }
+}

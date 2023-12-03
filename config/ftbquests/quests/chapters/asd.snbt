@@ -1,0 +1,1055 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "asd"
+	group: "5D641ED9208DC44C"
+	icon: "create:electron_tube"
+	id: "2E51BE6E5B2449AF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60B1C08500248C9F"]
+			description: [
+				"There are four base crystals which are mandatory for Progression"
+				""
+				"- &6Cinnabar&r"
+				"- &6Apatite&r"
+				"- &6Niter&r"
+				"- &6Quartz&r"
+				""
+				"While &6Quartz&r requires just &bwater&r to grow in size, the rest needs a &6Crystal Growth Solution&r"
+				""
+				"Your next target - The &6Electron Tube&r"
+				""
+				"Good luck!"
+			]
+			hide: true
+			icon: "create:precision_mechanism"
+			id: "54401C41ECA46FD6"
+			rewards: [{
+				count: 16
+				id: "345F20F6FDF31CE4"
+				item: "thermal:cinnabar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4893608BC7DF1E0C"
+				title: "Crystals"
+				type: "checkmark"
+			}]
+			title: "Seeking Precision"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3960CBA4BAE5B7EF"
+				"11B64DEE438A033C"
+			]
+			description: [
+				"A very tiny crystal, pour some &6Crystal Growth Solution&r on it to make it grow in size"
+				""
+				"You know the deal."
+			]
+			icon: "kubejs:apatite_seed"
+			id: "5FF3540E6FE6E6C9"
+			shape: "circle"
+			tasks: [{
+				id: "7C23B6C6003E1B55"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5FF3540E6FE6E6C9"]
+			description: ["Don't stop"]
+			icon: "kubejs:tiny_apatite_crystal"
+			id: "605A48632A8FBA2C"
+			shape: "circle"
+			tasks: [{
+				id: "3B3A8BFC40C2E405"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["605A48632A8FBA2C"]
+			description: ["Almost there..."]
+			icon: "kubejs:small_apatite_crystal"
+			id: "72A26DDAEE76B23C"
+			shape: "circle"
+			tasks: [{
+				id: "5828F4DF1A101368"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["72A26DDAEE76B23C"]
+			description: [
+				"Ah, yes! a perfect fully grown crystal"
+				""
+				"You can grow &6Niter&r the same way."
+				""
+				"Remember to keep on manufacturing those!"
+			]
+			icon: "kubejs:pure_apatite_crystal"
+			id: "586F800553901BC7"
+			tasks: [
+				{
+					id: "05D0BB79322FAA28"
+					item: "kubejs:pure_apatite_crystal"
+					type: "item"
+				}
+				{
+					id: "76074EA52685689D"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["30B5DBE06949F177"]
+			description: ["A crushed variant of fully grown crystal"]
+			icon: "thermal:apatite_dust"
+			id: "3960CBA4BAE5B7EF"
+			tasks: [
+				{
+					id: "12A64E5CFC0158CD"
+					item: "thermal:apatite_dust"
+					type: "item"
+				}
+				{
+					id: "252E670E6C446136"
+					type: "checkmark"
+				}
+			]
+			title: "A fine crystal powder"
+			x: 6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1E98A01AC8EC0148"]
+			description: [""]
+			icon: "thermal:niter_dust"
+			id: "019776708A3A04DF"
+			tasks: [
+				{
+					id: "68AC7BDBBE1E0BED"
+					item: "thermal:niter_dust"
+					type: "item"
+				}
+				{
+					id: "5D71B2D149336E37"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["063C49720E31CFC3"]
+			description: [
+				"&6Bone meal&r can be produced in few ways"
+				""
+				"You can use waste crops in a composter, mill bones or simply by importing it"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:bone_meal"
+			id: "2DA1B307C74C5E86"
+			tasks: [
+				{
+					id: "3B79C9FC22EA6B60"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "02D0A01308FA125C"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["71AD121EEB82C266"]
+			description: [
+				"&6Salt&r can be produced in many ways, at first you can sift it from &6White Sand&r."
+				""
+				"The most consistent way to get salt is by boiling water, you can use cauldron over campfire or heated mixing"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "salt:salt"
+			id: "196FED0BA948DC62"
+			tasks: [
+				{
+					id: "454FCEB2A3A47C9F"
+					item: "salt:salt"
+					type: "item"
+				}
+				{
+					id: "0D6D8AD67B13F0E0"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["063C49720E31CFC3"]
+			description: ["Just a water source"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:water_bucket"
+			id: "36338BF4B1F58DA4"
+			tasks: [
+				{
+					id: "2BBD5480DA98D3B4"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "439AB08D30A4E56B"
+					type: "checkmark"
+				}
+			]
+			title: "Water"
+			x: 4.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"36338BF4B1F58DA4"
+				"196FED0BA948DC62"
+				"019776708A3A04DF"
+				"2DA1B307C74C5E86"
+				"3960CBA4BAE5B7EF"
+			]
+			icon: "kubejs:crystal_growth_solution_bucket"
+			id: "11B64DEE438A033C"
+			tasks: [
+				{
+					id: "71A22AE969D388A5"
+					item: "kubejs:crystal_growth_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "528286CDBDFC33D3"
+					type: "checkmark"
+				}
+			]
+			title: "Crystal Growth Solution"
+			x: 6.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1505226B2FD40925"]
+			description: ["By crushing &6Cinnabar&r you can produce &6Redstone Dust&r."]
+			icon: "minecraft:redstone"
+			id: "4475908F52534074"
+			tasks: [{
+				id: "47D8295570A2C845"
+				type: "checkmark"
+			}]
+			title: "Redstone Dust"
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			description: ["&6Cinnabar&r is a good mineral for conducting power and transfering heat."]
+			hide_dependency_lines: true
+			icon: "thermal:cinnabar"
+			id: "1505226B2FD40925"
+			tasks: [{
+				id: "5A15199D93C45400"
+				type: "checkmark"
+			}]
+			title: "Cinnabar"
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4475908F52534074"]
+			description: ["&6Redstone Dust&r in liquid form."]
+			icon: "thermal:redstone_bucket"
+			id: "123C428241E4CC19"
+			tasks: [{
+				id: "29C80CAB6EAFFA57"
+				type: "checkmark"
+			}]
+			title: "Destabilized Redstone"
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"21CAF130545828C5"
+				"123C428241E4CC19"
+			]
+			description: ["Combine &6Destabilized Redstone&r and &6Quartz Crystal&r."]
+			icon: "create:rose_quartz"
+			id: "2900A6B2F94FE815"
+			tasks: [
+				{
+					id: "06A010330808DB4E"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+				{
+					id: "440E92FDD855C62B"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"679921E0D278BFA8"
+				"2900A6B2F94FE815"
+			]
+			description: ["Put some elbow grease into it."]
+			icon: "create:polished_rose_quartz"
+			id: "063C49720E31CFC3"
+			rewards: [
+				{
+					count: 16
+					id: "5AD301A62435ED60"
+					item: "thermal:apatite"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "31213D95D98E0935"
+					item: "thermal:niter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "53ACAC9F20682860"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "4FFDDF4A92BD6C02"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			description: ["&6Sand&r and &6Paper&r, nothing special."]
+			hide_dependency_lines: true
+			id: "679921E0D278BFA8"
+			tasks: [{
+				id: "0CEEC80EB2567CE3"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+				title: "Any #create:sandpaper"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			icon: "minecraft:sand"
+			id: "72F597C51305FA28"
+			shape: "circle"
+			tasks: [
+				{
+					id: "67AB40C4FD0680A7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sand"
+						}
+					}
+					title: "Any #forge:sand"
+					type: "item"
+				}
+				{
+					id: "0DAED02CF025BE99"
+					type: "checkmark"
+				}
+			]
+			title: "Additional Minerals"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			description: ["Put some &6Sand&r into furnace or blast it to make &6Glass&r."]
+			hide_dependency_lines: true
+			icon: "minecraft:glass"
+			id: "1B6B4054D5B06A1C"
+			tasks: [
+				{
+					id: "40E8D2BFE5ADBD86"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "5B665A80574B7F5A"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"1B6B4054D5B06A1C"
+				"295618985D587D90"
+			]
+			description: ["Precisely insert &6Glass&r into &6Tube Base&r to manufacture a usable casing."]
+			icon: "kubejs:empty_tube"
+			id: "32A3934CEC27E038"
+			tasks: [
+				{
+					id: "62711FC46696FB3A"
+					item: "kubejs:empty_tube"
+					type: "item"
+				}
+				{
+					id: "0B108389B25A5435"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"32A3934CEC27E038"
+				"063C49720E31CFC3"
+			]
+			description: ["Carefully insert the &6Quartz&r into &6Empty Tube&r to manufacture &6Electron Tube&r"]
+			icon: "create:electron_tube"
+			id: "60524A1CB291991A"
+			tasks: [
+				{
+					id: "4F706B0F90535CEE"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "2290AAE0811669B4"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7AE6E3CEB7920938"]
+			icon: "thermal:quartz_dust"
+			id: "775EDAA6E93BF889"
+			tasks: [
+				{
+					id: "764BAB1C7E5AA964"
+					item: "thermal:quartz_dust"
+					type: "item"
+				}
+				{
+					id: "334B9DCA7FAD28AE"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"72F597C51305FA28"
+				"775EDAA6E93BF889"
+				"22D2B509C51C4BB3"
+			]
+			description: ["Too small to be used in any form, spout some water on it."]
+			icon: "kubejs:quartz_seed"
+			id: "70E4C71FCC2AD537"
+			shape: "circle"
+			tasks: [{
+				id: "10494F794B5B231C"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["70E4C71FCC2AD537"]
+			description: ["Keep on spouting."]
+			icon: "kubejs:tiny_quartz_crystal"
+			id: "42103D756CBF789D"
+			shape: "circle"
+			tasks: [{
+				id: "238712E4542528D5"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["42103D756CBF789D"]
+			description: ["Almost there..."]
+			icon: "kubejs:small_quartz_crystal"
+			id: "17EF7F5B5C5775E9"
+			shape: "circle"
+			tasks: [{
+				id: "2C3F1C79B0269DE0"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["17EF7F5B5C5775E9"]
+			description: [
+				"Ah, yes! a perfect fully grown crystal"
+				""
+				"Remember to keep on manufacturing those!"
+			]
+			icon: "kubejs:pure_quartz_crystal"
+			id: "21CAF130545828C5"
+			tasks: [
+				{
+					id: "56DD675F4CAA4DDF"
+					item: "kubejs:pure_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "169E98888FD83B01"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			id: "22D2B509C51C4BB3"
+			tasks: [{
+				id: "47CD000BADC79257"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "Water"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["063C49720E31CFC3"]
+			description: [
+				"The &6Apatite&r is phosphate mineral with high concentration in hydrogen - a great fertilizer."
+				""
+				"It's properties are suitable to enhance the growth of crystals."
+			]
+			hide: true
+			hide_dependency_lines: false
+			icon: "thermal:apatite"
+			id: "30B5DBE06949F177"
+			tasks: [
+				{
+					id: "1852394F0099E9CC"
+					item: "thermal:apatite"
+					type: "item"
+				}
+				{
+					id: "4CEB8C6B18FEA196"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["063C49720E31CFC3"]
+			description: [
+				"The &6Niter&r is a highly soluble mineral with great properties, often used in fertilizers."
+				""
+				"It's properties are suitable to enhance the growth of crystals."
+			]
+			hide: true
+			hide_dependency_lines: false
+			icon: "thermal:niter"
+			id: "1E98A01AC8EC0148"
+			tasks: [
+				{
+					id: "5362B973E7434BAC"
+					item: "thermal:niter"
+					type: "item"
+				}
+				{
+					id: "66095F69D8036CB6"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			description: ["Only found in the &6Nether&r"]
+			hide_dependency_lines: true
+			icon: "minecraft:quartz"
+			id: "7AE6E3CEB7920938"
+			tasks: [
+				{
+					id: "0DCD0DD8A831D102"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "482D2D7BA1314C37"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60524A1CB291991A"]
+			description: ["Bringing together a &6Basic Mechanism&r, few other components and &6Electron Tubes&r completes the production of &6Precision Mechanism&r."]
+			hide_dependency_lines: false
+			icon: "create:precision_mechanism"
+			id: "71AD121EEB82C266"
+			rewards: [
+				{
+					count: 4
+					id: "312C6F9F15AE1A8A"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "178362CCB6CA61A3"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "635B807836A33CBA"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "589C81DD9ADF287C"
+					type: "checkmark"
+				}
+			]
+			title: "Precision manufacturing"
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4C240BF9967E19D0"]
+			description: ["Melted form of &6Iron&r."]
+			icon: "kubejs:molten_iron_bucket"
+			id: "587B5F276A4DCE64"
+			tasks: [{
+				id: "788ADFA08D5B124E"
+				type: "checkmark"
+			}]
+			title: "Melting into liquid"
+			x: -6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["77F77F1D7EA2E592"]
+			description: ["Steady supply."]
+			hide: true
+			id: "4C240BF9967E19D0"
+			tasks: [{
+				id: "453602F61DABDE7A"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"6FA936D9C99D8B5C"
+				"1D2C8DA39B1C5EB3"
+			]
+			dependency_requirement: "one_completed"
+			description: ["A base that can form tight seal around the Crystal."]
+			icon: "kubejs:tube_base"
+			id: "295618985D587D90"
+			tasks: [
+				{
+					id: "084D550423DB7FF9"
+					item: "kubejs:tube_base"
+					type: "item"
+				}
+				{
+					id: "301E2E103E9DD290"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1655C08441DD247F"
+				"587B5F276A4DCE64"
+			]
+			description: ["Using alredy made &6Tube Base&r you can imprint the shape in &6Blank Casts.&r"]
+			id: "6FA936D9C99D8B5C"
+			tasks: [{
+				id: "709B6804717271CE"
+				item: "kubejs:tube_base_cast"
+				type: "item"
+			}]
+			title: "Tube Blank Cast"
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5AFFDCEAF275C326"]
+			description: ["A layer of sand which can be pressed into casting form."]
+			id: "1655C08441DD247F"
+			tasks: [{
+				id: "27A42CBBCE8348F9"
+				item: "kubejs:blank_cast"
+				type: "item"
+			}]
+			title: "Blank Cast"
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1D2C8DA39B1C5EB3"]
+			description: ["Infinitely making &6Tube Base&r them by hand is not a good idea, thankfully you can automate the process using casts."]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:sand"
+			id: "7A92A121E7893D7A"
+			tasks: [{
+				id: "3C82EB852CE6A071"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
+					}
+				}
+				title: "Any #forge:sand"
+				type: "item"
+			}]
+			title: "Sand"
+			x: -7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7A92A121E7893D7A"]
+			description: ["Sieved &6Sand&r is turned into &6Sand Pile&r."]
+			icon: "immersive_weathering:sand_layer_block"
+			id: "5AFFDCEAF275C326"
+			tasks: [
+				{
+					id: "49E4DE9C36D19863"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:casting_sand"
+						}
+					}
+					title: "Any #forge:casting_sand"
+					type: "item"
+				}
+				{
+					id: "0D32232BF42342D4"
+					type: "checkmark"
+				}
+			]
+			title: "Sand Pile"
+			x: -7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			id: "0C490F318F6DFB52"
+			tasks: [{
+				id: "11E849E07A762A12"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:screwdrivers"
+					}
+				}
+				title: "Any #forge:screwdrivers"
+				type: "item"
+			}]
+			title: "Screwdriver"
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			id: "1F6166674B20BF38"
+			tasks: [{
+				id: "5CE4C62B4B2D0CBE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:saws"
+					}
+				}
+				title: "Any #forge:saws"
+				type: "item"
+			}]
+			title: "Saw"
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			id: "7E27B436F7385A10"
+			tasks: [{
+				id: "42EA8F27E759799B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:pliers"
+					}
+				}
+				title: "Any #forge:pliers"
+				type: "item"
+			}]
+			title: "Pliers"
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54401C41ECA46FD6"]
+			hide_dependency_lines: true
+			id: "38532B8BEF9844DA"
+			tasks: [{
+				id: "00D2C3154E76E504"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:files"
+					}
+				}
+				title: "Any #forge:files"
+				type: "item"
+			}]
+			title: "File"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7E27B436F7385A10"
+				"1F6166674B20BF38"
+				"38532B8BEF9844DA"
+				"0C490F318F6DFB52"
+			]
+			description: ["Its time to stockpile on the basic engineers tools, this proces doesn't require automation but you would do best with it."]
+			icon: "create:iron_sheet"
+			id: "1D2C8DA39B1C5EB3"
+			tasks: [
+				{
+					id: "77F77F1D7EA2E592"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					id: "7CE10A6CE10862D4"
+					type: "checkmark"
+				}
+			]
+			title: "Manual work"
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["586F800553901BC7"]
+			description: [
+				"Extemely potent fertilizer."
+				""
+				"Thanks to &6Apatite&r and &6Niter&r properties you can produce &6Phyto-Gro&r, use it to accelerate your farms production!"
+			]
+			id: "6B1CA679596EA24E"
+			tasks: [{
+				id: "59E71890D7823679"
+				item: "thermal:phytogro"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["65CCFEAECFFBC6B9"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:magma_block"
+			id: "1F0DDB2A940FB0EA"
+			tasks: [
+				{
+					id: "658A6927CE35A155"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					id: "47D31CFE8BB4BA95"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1F0DDB2A940FB0EA"]
+			icon: "create_things_and_misc:crushed_magma"
+			id: "24DE4EA8B59203FF"
+			tasks: [
+				{
+					id: "4FEF139FAEA1DC52"
+					item: "create_things_and_misc:crushed_magma"
+					type: "item"
+				}
+				{
+					id: "4D08FCE6763D1F9F"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["65CCFEAECFFBC6B9"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:lava_bucket"
+			id: "3D2705127C5ED765"
+			tasks: [
+				{
+					id: "6C6A0FD8031ADAEB"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "70251458CD1CF5D4"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"0B22B31C3CAC57C3"
+				"3D2705127C5ED765"
+				"24DE4EA8B59203FF"
+			]
+			description: ["Thanks to obsidian its not hot to the touch but be carefull."]
+			id: "09739C04B50B7767"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "72AA786DEF701588"
+				item: "kubejs:magmatic_mechanism"
+				type: "item"
+			}]
+			x: -4.25d
+			y: 19.0d
+		}
+		{
+			dependencies: ["65CCFEAECFFBC6B9"]
+			description: ["Compressed Powdered Obsidian, check &6Chapter I&r for detailed guide"]
+			hide: true
+			icon: "create:sturdy_sheet"
+			id: "0B22B31C3CAC57C3"
+			tasks: [
+				{
+					id: "7A8635B2282559B2"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "04FEC406CB4D1AEE"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["35893C5E6A334FFA"]
+			hide: true
+			id: "0A44D0D19A3A9051"
+			tasks: [{
+				id: "4E01358977502532"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"0A44D0D19A3A9051"
+				"46C8CBEC23D5F27B"
+			]
+			id: "2A1F96406EA7F263"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7B36C53AC1E36F49"
+				item: "create_things_and_misc:vibration_mechanism"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 20.0d
+		}
+		{
+			dependencies: ["35893C5E6A334FFA"]
+			hide: true
+			id: "46C8CBEC23D5F27B"
+			tasks: [{
+				id: "463AEC3B6B86079B"
+				item: "create_things_and_misc:rose_quartz_sheet"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 18.5d
+		}
+	]
+	title: "&f2&r Seeking Precision"
+}

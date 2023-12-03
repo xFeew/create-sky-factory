@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/flourishing_archwood",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 721345,
+    "spacing": 90,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

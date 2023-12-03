@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r1"
+	group: "5D641ED9208DC44C"
+	icon: "minecraft:ender_eye"
+	id: "73B44D242DE5DE75"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["3AC9BE7AA08E3D6C"]
+		hide: true
+		icon: "dimension_crystals:dimension_end"
+		id: "467C277421B0B1F7"
+		rewards: [{
+			count: 3
+			id: "6D3E85EF1E8931C7"
+			item: "thermal:gold_coin"
+			type: "item"
+		}]
+		shape: "hexagon"
+		size: 1.5d
+		tasks: [
+			{
+				id: "172B563B5908DAD0"
+				item: "dimension_crystals:dimension_end"
+				type: "item"
+			}
+			{
+				id: "4C80CAB38ADEB20B"
+				type: "checkmark"
+			}
+		]
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["???"]
+	title: "&f9&r The End"
+}

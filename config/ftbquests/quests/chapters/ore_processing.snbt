@@ -18,91 +18,118 @@
 			dependencies: ["4EF72392F62D29D3"]
 			icon: "minecraft:iron_ore"
 			id: "3C4685BFDF2A01CD"
+			shape: "circle"
 			tasks: [{
 				id: "250F2BA724666702"
 				type: "checkmark"
 			}]
-			title: "Iron Ore"
+			title: "Raw Ore"
 			x: 0.0d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["18C1A9076027D94B"]
+			dependencies: [
+				"18C1A9076027D94B"
+				"517D1675CC804A4F"
+				"097AFD7A501275DC"
+				"547CD0669FC0B23F"
+			]
 			icon: "minecraft:raw_iron"
 			id: "6AAA95FE043846AE"
+			shape: "circle"
 			tasks: [{
 				id: "539D86A40202DABD"
 				type: "checkmark"
 			}]
-			title: "Raw Iron"
+			title: "I: Raw Iron"
 			x: 0.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["79AD44934400B70A"]
+			dependencies: [
+				"79AD44934400B70A"
+				"2286EF538481176D"
+				"4E493D5EC2DC9CA8"
+				"25079EDB33F4381E"
+			]
 			icon: "create:crushed_raw_iron"
 			id: "3647BAEEF3BE4526"
+			shape: "circle"
 			tasks: [{
 				id: "33FFAC700CAE6115"
 				type: "checkmark"
 			}]
-			title: "Crushed Raw Iron"
+			title: "II: Crushed"
 			x: 0.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"02E3B1AC2BAC84CF"
 				"3BCE4F9AF8C93B72"
+				"55ABEF5A0C0B8938"
+				"000E400BE0825413"
 			]
 			icon: "thermal:iron_dust"
 			id: "2585C77AA605BC80"
+			shape: "circle"
 			tasks: [{
 				id: "30BC1D6FC608ECF0"
 				type: "checkmark"
 			}]
-			title: "Iron Dust"
+			title: "III: Dust"
 			x: 0.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"30B6510FD62D6755"
-				"42D4D3A1B379A99E"
+				"3120D9089EE39B12"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "514F744D452F2DDE"
+			shape: "circle"
 			tasks: [{
 				id: "15B9F3DCA02E5A46"
 				type: "checkmark"
 			}]
-			title: "Iron Ingot"
-			x: 0.0d
-			y: 7.5d
+			title: "IV: Ingot"
+			x: 1.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"51E3914B6B226958"
 				"3572BDDF737D49C9"
 			]
+			icon: "minecraft:iron_nugget"
 			id: "6F204833B139E2E6"
+			shape: "circle"
 			tasks: [{
-				id: "2B0495B14E3B9873"
-				item: "minecraft:iron_nugget"
-				type: "item"
+				id: "2370AFBB57EBB3FE"
+				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 3.5d
+			title: "IIIa: Nugget"
+			x: 2.0d
+			y: 5.5d
 		}
 		{
 			description: [
-				"Getting iron is no longer a simple task."
+				"Getting refined ingots is no longer a simple task."
 				""
-				"The Ore Processing is a complex system, this chapter should make everything clear for you."
+				"The &6Ore Processing&r is a complex system, this chapter should make everything clear for you."
 				""
-				"It's recommended to use JEI when you get stuck."
+				"Each step has it's corresponding tiers in yield"
+				""
+				"You can also check the process in JEI"
 			]
-			icon: "artifacts:crystal_heart"
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4EF72392F62D29D3"
 			shape: "hexagon"
 			size: 1.5d
@@ -113,55 +140,59 @@
 			}]
 			title: "Ore Processing"
 			x: 0.0d
-			y: -8.25d
+			y: -9.0d
 		}
 		{
 			dependencies: ["6AAA95FE043846AE"]
 			icon: "create:millstone"
 			id: "79AD44934400B70A"
+			subtitle: "1 to 1"
 			tasks: [{
 				id: "2E10D7B0C9A93251"
 				type: "checkmark"
 			}]
-			title: "Millstone"
-			x: -2.5d
-			y: -3.5d
+			title: "Milling"
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["25A8787A5AD2B70D"]
 			icon: "createsifter:sifter"
 			id: "02E3B1AC2BAC84CF"
+			subtitle: "1 to 0-1"
 			tasks: [{
 				id: "07D0539760FF7671"
 				type: "checkmark"
 			}]
 			title: "Sifter"
-			x: 2.5d
-			y: -3.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2585C77AA605BC80"]
 			icon: "minecraft:furnace"
 			id: "51E3914B6B226958"
+			subtitle: "1 to 1"
 			tasks: [{
 				id: "67A4DF1FFF80F3AB"
 				type: "checkmark"
 			}]
 			title: "Melting into nuggets"
-			x: 1.0d
-			y: 1.5d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2585C77AA605BC80"]
 			icon: "create:encased_fan"
 			id: "3572BDDF737D49C9"
+			subtitle: "1 to 1-2"
 			tasks: [{
 				id: "1AD30B1964CD535C"
 				type: "checkmark"
 			}]
 			title: "Washing the dust"
-			x: -1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3C4685BFDF2A01CD"]
@@ -173,101 +204,313 @@
 				}
 			}
 			id: "18C1A9076027D94B"
+			subtitle: "1 to 1"
 			tasks: [{
 				id: "5B4B7492021ED5C8"
 				type: "checkmark"
 			}]
-			title: "Iron Pickaxe"
-			x: -2.5d
+			title: "Manual Mining"
+			x: 2.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3647BAEEF3BE4526"]
 			icon: "create:millstone"
 			id: "3BCE4F9AF8C93B72"
+			subtitle: "1 to 2-3"
 			tasks: [{
 				id: "76D9D6C7E8FD049E"
 				type: "checkmark"
 			}]
-			title: "Millstone"
-			x: -2.5d
-			y: -1.5d
+			title: "Milling"
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			icon: "minecraft:gravel"
 			id: "25A8787A5AD2B70D"
+			subtitle: "Gravel can be used to produce different materials"
 			tasks: [{
 				id: "4AC9E61780C5B3BF"
 				type: "checkmark"
 			}]
-			title: "Gravel"
-			x: 2.5d
-			y: -5.5d
+			title: "Pulverized cobblestone"
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2585C77AA605BC80"]
-			description: [""]
+			description: ["By aerating the liquid theres a chance to produce slag"]
 			icon: "create:mechanical_mixer"
 			id: "08ED12F6D9C65A23"
-			subtitle: "By aerating the liquid theres a chance to produce slag"
+			shape: "square"
+			subtitle: "1 to 3"
 			tasks: [{
 				id: "14560D5A5B5578E6"
 				type: "checkmark"
 			}]
-			title: "Heated Mixing"
-			x: 3.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["1E8EE17F32D6308A"]
-			icon: "create:mechanical_press"
-			id: "42D4D3A1B379A99E"
-			tasks: [{
-				id: "145347CBCBE8FD69"
-				type: "checkmark"
-			}]
-			title: "Compacting"
-			x: 3.5d
+			title: "Melting into liquid"
+			x: -2.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["08ED12F6D9C65A23"]
 			icon: "kubejs:molten_iron_bucket"
 			id: "1E8EE17F32D6308A"
+			shape: "circle"
 			tasks: [{
 				id: "74EEB968EAE7E0F4"
 				type: "checkmark"
 			}]
-			title: "Liquid"
-			x: 3.5d
-			y: 1.5d
+			title: "IIIb: Liquid"
+			x: 0.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["08ED12F6D9C65A23"]
 			icon: "thermal:slag"
 			id: "12631A1CEE08BAF6"
+			subtitle: "33%"
 			tasks: [{
 				id: "1FF377F1C84D555D"
 				title: "Junk"
 				type: "checkmark"
 			}]
 			title: "Junk"
-			x: 5.5d
-			y: -0.5d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6F204833B139E2E6"]
 			icon: "create:mechanical_press"
 			id: "30B6510FD62D6755"
+			subtitle: "9 to 1"
 			tasks: [{
 				id: "374276A36CF10358"
 				title: "Compacting to ingots"
 				type: "checkmark"
 			}]
 			title: "Compacting into ingots"
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6AAA95FE043846AE"]
+			icon: "create:crushing_wheel"
+			id: "2286EF538481176D"
+			subtitle: "1 to 1-2"
+			tasks: [{
+				id: "24D619C5A947CA5A"
+				type: "checkmark"
+			}]
+			title: "Crushing"
 			x: 0.0d
-			y: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3647BAEEF3BE4526"]
+			icon: "create:crushing_wheel"
+			id: "55ABEF5A0C0B8938"
+			subtitle: "1 to 4-6"
+			tasks: [{
+				id: "5F0191F211A81A45"
+				type: "checkmark"
+			}]
+			title: "Crushing"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			icon: "immersive_weathering:sand_layer_block"
+			id: "16331B51005CA1CC"
+			shape: "square"
+			tasks: [{
+				id: "01EFC43AF72A3D80"
+				type: "checkmark"
+			}]
+			title: "Sand Pile"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["16331B51005CA1CC"]
+			icon: "kubejs:blank_cast"
+			id: "03F00EA5A2C65426"
+			tasks: [{
+				id: "5420A0006E7F4CF0"
+				type: "checkmark"
+			}]
+			title: "Blank Cast"
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["03F00EA5A2C65426"]
+			icon: "kubejs:ingot_cast"
+			id: "1A9BA8D5A9583542"
+			tasks: [{
+				id: "55F9669658DD8522"
+				type: "checkmark"
+			}]
+			title: "Ingot Cast"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1E8EE17F32D6308A"
+				"1A9BA8D5A9583542"
+			]
+			icon: "create:spout"
+			id: "3120D9089EE39B12"
+			subtitle: "9 to 1"
+			tasks: [{
+				id: "177CB7162655F023"
+				type: "checkmark"
+			}]
+			title: "Casting into ingots"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3C4685BFDF2A01CD"]
+			icon: "create:millstone"
+			id: "097AFD7A501275DC"
+			subtitle: "1 to 1"
+			tasks: [{
+				id: "565AC0766EBE58DD"
+				type: "checkmark"
+			}]
+			title: "Milling"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3C4685BFDF2A01CD"]
+			icon: "create:crushing_wheel"
+			id: "517D1675CC804A4F"
+			subtitle: "1 to 1-2"
+			tasks: [{
+				id: "7AE749EE5E7D812F"
+				type: "checkmark"
+			}]
+			title: "Crushing"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6AAA95FE043846AE"]
+			icon: "thermal:machine_pulverizer"
+			id: "4E493D5EC2DC9CA8"
+			subtitle: "1 to 2-3"
+			tasks: [{
+				id: "78FEC95AD341A142"
+				type: "checkmark"
+			}]
+			title: "Pulverizing"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3647BAEEF3BE4526"]
+			icon: "thermal:machine_pulverizer"
+			id: "000E400BE0825413"
+			subtitle: "1 to 6"
+			tasks: [{
+				id: "31292DB87638901A"
+				type: "checkmark"
+			}]
+			title: "Pulverizing"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Toretoise spawns below Y40 and in complete darkness."
+				""
+				"Toretoise can &6grow&r one of the following on their back:"
+				""
+				"- &6Iron&r"
+				"- &6Copper&r"
+				"- &6Redstone&r"
+				"- &6Coal&r"
+				"- &6Lapis&r"
+			]
+			icon: "quark:toretoise_spawn_egg"
+			id: "6BBDB1FD31FDA324"
+			subtitle: "Potential co-worker?"
+			tasks: [{
+				id: "1E7195B9172CF80B"
+				type: "checkmark"
+			}]
+			title: "Toretoise"
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6BBDB1FD31FDA324"]
+			description: ["Toretoises feed on glow berries, they cannot be breed."]
+			icon: "farmersdelight:horse_feed"
+			id: "11FC6469E9FAD71F"
+			invisible: true
+			tasks: [{
+				icon: "quark:toretoise_spawn_egg"
+				id: "58A4229025794C4A"
+				observe_type: 5
+				secret: true
+				timer: 0L
+				title: "Examine this creature"
+				to_observe: "quark:toretoise"
+				type: "observation"
+			}]
+			title: "Payment"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6BBDB1FD31FDA324"]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "547CD0669FC0B23F"
+			subtitle: "1 to many, use fortune for higher yield."
+			tasks: [{
+				id: "19CBFDD56A1C827F"
+				type: "checkmark"
+			}]
+			title: "Like shearing a sheep"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			icon: "create:crimsite"
+			id: "43C66115AC8940BC"
+			subtitle: "Some of those islands are worth exploring... or mining."
+			tasks: [{
+				id: "0B8D5C3C3C8FB322"
+				type: "checkmark"
+			}]
+			title: "Look around"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43C66115AC8940BC"]
+			icon: "create:crushing_wheel"
+			id: "25079EDB33F4381E"
+			subtitle: "1 to 0-1"
+			tasks: [{
+				id: "75F9A350980470E6"
+				type: "checkmark"
+			}]
+			title: "Crushing"
+			x: 2.0d
+			y: -1.0d
 		}
 	]
-	title: "Ore processing"
+	title: "&a Ore processing"
 }

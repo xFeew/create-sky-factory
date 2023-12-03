@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:veins/tuff",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 192846,
+    "spacing": 20,
+    "separation": 5,
+    "type": "minecraft:random_spread"
+  }
+}

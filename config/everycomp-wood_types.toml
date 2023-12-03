@@ -1,0 +1,269 @@
+
+[types]
+
+	[types.leaves_type]
+
+		[types.leaves_type.ars_nouveau]
+			blue_archwood = true
+			green_archwood = true
+			purple_archwood = true
+			red_archwood = true
+
+		[types.leaves_type.thermal]
+			rubberwood = true
+
+		[types.leaves_type.architects_palette]
+			twisted = true
+
+		[types.leaves_type.culturaldelights]
+			avocado = true
+			fruiting_avocado = true
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			pink_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+		[types.leaves_type.forbidden_arcanus]
+			cherry = true
+			aurum = true
+			nuggety_aurum = true
+
+	[types.wood_type]
+
+		[types.wood_type.ars_nouveau]
+			archwood = true
+
+		[types.wood_type.quark]
+			bamboo = true
+			azalea = true
+			ancient = true
+			blossom = true
+
+		[types.wood_type.thermal]
+			rubberwood = true
+
+		[types.wood_type.architects_palette]
+			twisted = true
+
+		[types.wood_type.forbidden_arcanus]
+			fungyss = true
+			cherry = true
+			aurum = true
+			edelwood = true
+
+[entries]
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+	[entries.wood_type]
+
+		[entries.wood_type.buildersdelight]
+			stairs_4 = true
+			stairs_5 = true
+			stairs_6 = true
+			stairs_7 = true
+			stairs_1 = true
+			stairs_2 = true
+			frame_7 = true
+			stairs_3 = true
+			frame_8 = true
+			frame_5 = true
+			frame_6 = true
+			frame_3 = true
+			frame_4 = true
+			frame_1 = true
+			frame_2 = true
+			chair_2 = true
+			chair_1 = true
+			slab_5 = true
+			slab_4 = true
+			slab_7 = true
+			slab_6 = true
+			slab_1 = true
+			slab_3 = true
+			slab_2 = true
+			planks_3 = true
+			planks_4 = true
+			planks_1 = true
+			planks_2 = true
+			planks_7 = true
+			planks_5 = true
+			planks_6 = true
+			table_1 = true
+			table_2 = true
+			glass_8 = true
+			glass_2 = true
+			glass_3 = true
+			glass_1 = true
+			glass_6 = true
+			glass_7 = true
+			glass_4 = true
+			glass_5 = true
+			glass_pane_7 = true
+			glass_pane_8 = true
+			furniture_kit = true
+			glass_pane_5 = true
+			glass_pane_6 = true
+			glass_pane_3 = true
+			glass_pane_4 = true
+			glass_pane_1 = true
+			glass_pane_2 = true
+
+		[entries.wood_type.chipped]
+			fine_planks = true
+			checkered_trapdoor = true
+			overgrown_trapdoor = true
+			overgrown_door = true
+			windowed_door = true
+			tiled_door = true
+			classic_trapdoor = true
+			circle_glass = true
+			pegged_planks = true
+			torch = true
+			secret_door = true
+			smooth_planks = true
+			screen_door = true
+			bared_glass = true
+			ornate_bared_glass = true
+			hewn_planks = true
+			crossed_planks = true
+			beach_door = true
+			fine_vertical_planks = true
+			cross_laced_planks = true
+			diamond_bordered_glass = true
+			railed_planks = true
+			planks_mosaic = true
+			distorted_trapdoor = true
+			iron_barred_trapdoor = true
+			circle_glass_pane = true
+			versailles_planks = true
+			whirlwind_planks = true
+			large_diamond_glass_pane = true
+			framed_planks = true
+			square_glass = true
+			vined_trapdoor = true
+			barrel = true
+			woven_glass = true
+			detailed_planks = true
+			woven_trapdoor = true
+			cobweb_trapdoor = true
+			gated_door = true
+			supported_door = true
+			barred_trapdoor = true
+			line_bared_glass_pane = true
+			horizontal_lined_glass_pane = true
+			airy_trapdoor = true
+			line_bared_glass = true
+			slanted_planks = true
+			barred_door = true
+			suspicious_trapdoor = true
+			herringbone_planks = true
+			pressed_door = true
+			planks_panel = true
+			vertically_railed_planks = true
+			bared_glass_pane = true
+			diamond_bordered_glass_pane = true
+			solid_trapdoor = true
+			tiled_planks = true
+			boarded_door = true
+			dual_paneled_door = true
+			square_glass_pane = true
+			meshed_trapdoor = true
+			thin_planks = true
+			fancy_trapdoor = true
+			paper_door = true
+			warted_trapdoor = true
+			basket_woven_planks = true
+			enclosed_planks = true
+			double_herringbone_planks = true
+			crated_planks = true
+			horizontal_lined_glass = true
+			natural_planks = true
+			classic_windowed_trapdoor = true
+			brick_bond_planks = true
+			wickered_planks = true
+			bordered_glass_pane = true
+			sliding_door = true
+			heavy_trapdoor = true
+			bordered_glass = true
+			laced_planks = true
+			boxed_planks = true
+			reinforced_crate = true
+			large_diamond_glass = true
+			snowflake_glass_pane = true
+			bricky_planks = true
+			slotted_trapdoor = true
+			shack_door = true
+			polished_planks = true
+			ornate_bared_glass_pane = true
+			diagonal_planks = true
+			wall_torch = true
+			crate = true
+			nailed_planks = true
+			cornered_planks = true
+			shifted_planks = true
+			vertical_planks = true
+			glass_door = true
+			fortified_door = true
+			paneled_door = true
+			leafy_trapdoor = true
+			snowflake_glass = true
+			heavy_door = true
+			pointless_trapdoor = true
+			stacked_planks = true
+			planks_shavings = true
+			twisted_trapdoor = true
+			diamond_planks = true
+			woven_glass_pane = true
+			windowed_trapdoor = true
+			tile_windowed_door = true
+			golden_barred_trapdoor = true
+
+		[entries.wood_type.architects_palette]
+			board_stairs = true
+			board_wall = true
+			railing = true
+			boards = true
+			board_slab = true
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			ladder = true
+			post = true
+			trapped_chest = true
+			chest = true
+			hollow_log = true
+			bookshelf = true
+			stripped_post = true
+
+		[entries.wood_type.decorative_blocks]
+			seat = true
+			palisade = true
+			beam = true
+			support = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.storagedrawers]
+			full_drawers_2 = true
+			full_drawers_4 = true
+			full_drawers_1 = true
+			half_drawers_1 = true
+			half_drawers_4 = true
+			half_drawers_2 = true
+			trim = true
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+

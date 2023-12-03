@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/medium_forest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 42161432,
+    "spacing": 12,
+    "separation": 4,
+    "type": "minecraft:random_spread"
+  }
+}

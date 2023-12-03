@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyfactory:overworld/amethyst_sphere",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 612537812,
+    "spacing": 50,
+    "separation": 4,
+    "type": "minecraft:random_spread"
+  }
+}

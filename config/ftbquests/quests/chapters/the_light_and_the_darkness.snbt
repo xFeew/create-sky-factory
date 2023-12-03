@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_light_and_the_darkness"
+	group: "5D641ED9208DC44C"
+	icon: "create:shadow_steel"
+	id: "5652854841742A0E"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["650017C03A26A5C7"]
+		hide: true
+		icon: "create:shadow_steel"
+		id: "426050C31D7BB933"
+		shape: "hexagon"
+		size: 1.5d
+		tasks: [{
+			id: "61B3CF0BC1BFA78A"
+			type: "item"
+		}]
+		title: "The Light And The Dark"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&f8&r The Light And The Dark"
+}

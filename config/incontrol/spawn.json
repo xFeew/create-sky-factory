@@ -1,7 +1,6 @@
 [
   {
-    "dimension": "minecraft:overworld",
-    "mob": "minecraft:phantom",
-    "result": "deny"
+    "mob": "quark:toretoise",
+    "healthmultiply": 100
   }
 ]

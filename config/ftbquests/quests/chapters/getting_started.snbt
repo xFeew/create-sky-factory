@@ -3,48 +3,87 @@
 	default_quest_shape: "square"
 	filename: "getting_started"
 	group: "5D641ED9208DC44C"
-	icon: "minecraft:grass_block"
+	icon: "create:andesite_alloy"
 	id: "77EB555AFE4C2BEA"
-	order_index: 0
+	order_index: 1
 	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["79AAFB74B3CD6AB8"]
 			description: ["Acquire a cobblestone from cobblestone generator"]
+			hide: false
+			hide_dependency_lines: true
+			icon: "minecraft:cobblestone"
 			id: "257FF8815C7286F8"
 			rewards: [{
-				id: "647779139567F9CB"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "square"
-			subtitle: "The basics of skyblock"
-			tasks: [{
-				id: "3872E9EA2DD5867D"
-				item: "minecraft:cobblestone"
+				id: "5CF70946805B3E50"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			subtitle: "The basics of skyblock"
+			tasks: [
+				{
+					id: "3872E9EA2DD5867D"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "391BD944BC0E0008"
+					type: "checkmark"
+				}
+			]
 			title: "Cobblestone generator"
-			x: 3.5d
-			y: 0.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["79AAFB74B3CD6AB8"]
+			hide: false
+			hide_dependency_lines: true
 			icon: "minecraft:oak_log"
 			id: "44E134E6FB0857A5"
+			rewards: [{
+				id: "0E8718949D38F9D1"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
-			size: 2.0d
 			subtitle: "Wish for the sapling"
 			tasks: [
 				{
 					id: "14CC03858B2A3236"
-					item: "minecraft:oak_log"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2C2B4CCF018630B8"
 					type: "checkmark"
 				}
 			]
+			title: "Lonely Oak Tree"
 			x: -2.0d
 			y: -2.0d
 		}
@@ -55,32 +94,57 @@
 				"2203EDF3E1C9DBE6"
 			]
 			hide_dependency_lines: false
+			icon: "create:andesite_alloy"
 			id: "0616E6B085ACAC38"
 			min_required_dependencies: 2
-			rewards: [{
-				id: "6716600D631830BE"
-				type: "xp"
-				xp: 200
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0A81FFFFD1429882"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0283FF7C82341343"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "02E1E1E2C49F68F2"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -2.0d
+			tasks: [
+				{
+					id: "02E1E1E2C49F68F2"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "7D9B617F7E562A21"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["257FF8815C7286F8"]
+			description: [
+				"Each step increases the requirements."
+				""
+				"&6Warning!&r Items will be &nconsumed&r."
+			]
+			hide: true
 			icon: "minecraft:cobblestone"
 			id: "2F35D8C6248421E2"
+			rewards: [{
+				id: "3F0399FF5FF389F1"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
 			shape: "square"
-			subtitle: "This is getting boring"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 64L
 					id: "20BC052CFE87F865"
 					item: "minecraft:cobblestone"
@@ -91,11 +155,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "Mining..."
-			x: 3.5d
-			y: 2.5d
+			title: "Whats that?"
+			x: -5.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0692F10BFDBB89E7"]
+			hide_dependency_lines: true
 			icon: "minecraft:kelp"
 			id: "3D8896009ADFF50D"
 			tasks: [
@@ -109,8 +175,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.5d
-			y: -4.0d
+			x: -5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -130,8 +196,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 7.0d
-			y: -4.0d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["503FCC3F950B8D84"]
@@ -148,48 +214,15 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: -4.0d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
-			icon: "minecraft:gravel"
-			id: "7D30DAB2280FDA76"
-			tasks: [
-				{
-					id: "63C769316A8FEB78"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					id: "1917854695206A5F"
-					type: "checkmark"
-				}
-			]
-			x: 3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7D30DAB2280FDA76"]
-			icon: "thermal:iron_dust"
-			id: "3DE69EEA23D57F0F"
-			tasks: [
-				{
-					id: "37014F4A39102D4E"
-					item: "thermal:iron_dust"
-					type: "item"
-				}
-				{
-					id: "499039CBACA67394"
-					type: "checkmark"
-				}
-			]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3DE69EEA23D57F0F"]
+			dependencies: ["0692F10BFDBB89E7"]
+			hide_dependency_lines: true
 			icon: "minecraft:iron_nugget"
 			id: "11A1E736DD88B397"
+			subtitle: "May sound like a simple task..."
 			tasks: [
 				{
 					id: "7D5B00EC373B37AA"
@@ -201,8 +234,9 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: -2.0d
+			title: "Iron Nugget"
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["370875338E394C83"]
@@ -219,10 +253,11 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
-			y: -5.5d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["349406998A1914FD"]
 			icon: "minecraft:andesite"
 			id: "2203EDF3E1C9DBE6"
 			tasks: [
@@ -236,12 +271,15 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: 0.0d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
+			dependencies: ["0692F10BFDBB89E7"]
+			hide_dependency_lines: true
 			icon: "minecraft:sand"
 			id: "370875338E394C83"
+			subtitle: "A good way to automate sand is to get Water Strainers"
 			tasks: [
 				{
 					id: "53279E78C632481C"
@@ -253,12 +291,15 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.5d
-			y: -5.5d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["44E134E6FB0857A5"]
-			description: ["For now the kelp is accesible from here."]
+			dependencies: [
+				"44E134E6FB0857A5"
+				"257FF8815C7286F8"
+			]
+			description: ["To help you get going."]
 			icon: "minecraft:kelp"
 			id: "0692F10BFDBB89E7"
 			rewards: [{
@@ -267,34 +308,569 @@
 				type: "item"
 			}]
 			shape: "square"
+			subtitle: "Automate it's production"
 			tasks: [{
 				id: "57E15F804F4311BC"
 				type: "checkmark"
 			}]
 			title: "Free kelp!"
-			x: 0.0d
-			y: -2.0d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0616E6B085ACAC38"]
 			description: [""]
 			icon: "supplementaries:cartographers_quill"
 			id: "0D9DEACCDAFDAD0C"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Consider automating Andesite Alloy"
+			shape: "circle"
+			subtitle: "Consider automating &6Andesite Alloy&r"
 			tasks: [{
 				id: "3A2BEE59A579CCB4"
 				type: "checkmark"
 			}]
 			title: "Hint"
-			x: 15.0d
-			y: -2.0d
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2F35D8C6248421E2"]
+			hide: true
+			icon: "minecraft:cobblestone"
+			id: "749A5C9B2AAEE8B9"
+			rewards: [{
+				count: 2
+				id: "44E6B11C7A744162"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 128L
+					id: "422CB42B64744834"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "39ADE03B99A46426"
+					type: "checkmark"
+				}
+			]
+			title: "A little workout"
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["749A5C9B2AAEE8B9"]
+			hide: true
+			icon: "minecraft:cobblestone"
+			id: "0BDD6BD206016B5E"
+			rewards: [{
+				count: 4
+				id: "1362DB4A99314B07"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			subtitle: "This is getting boring"
+			tasks: [
+				{
+					consume_items: true
+					count: 256L
+					id: "75CBEE8134C9AA30"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "1EAA3AA820792CAB"
+					type: "checkmark"
+				}
+			]
+			title: "Mining..."
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0692F10BFDBB89E7"]
+			description: [
+				"As you might have noticed, some materials are limited."
+				""
+				"Thankfully, &6Gravel&r can cause lava to generate &6Andesite&r infinitely."
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_drill"
+			id: "349406998A1914FD"
+			tasks: [{
+				id: "38458FF4965C42C8"
+				type: "checkmark"
+			}]
+			title: "Custom Generators"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0692F10BFDBB89E7"]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_log"
+			id: "073F430A3EE2271C"
+			tasks: [{
+				id: "0FBABAA8F1A7ED8A"
+				type: "checkmark"
+			}]
+			title: "Oak Log"
+			x: -7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["073F430A3EE2271C"]
+			icon: "minecraft:stripped_oak_log"
+			id: "277FB99DEC029ED3"
+			tasks: [{
+				id: "207122CEC4B4BB34"
+				type: "checkmark"
+			}]
+			title: "Stripped Oak Log"
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["277FB99DEC029ED3"]
+			icon: "minecraft:oak_planks"
+			id: "34E43A952765B403"
+			tasks: [{
+				id: "50F11148D080A1F2"
+				type: "checkmark"
+			}]
+			title: "Oak Planks"
+			x: -6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["34E43A952765B403"]
+			icon: "minecraft:oak_slab"
+			id: "65B711B13588DB62"
+			tasks: [{
+				id: "6DF31E9EDD4204F4"
+				type: "checkmark"
+			}]
+			title: "Oak Slab"
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"63D63254C63732FB"
+				"65B711B13588DB62"
+				"0616E6B085ACAC38"
+			]
+			icon: "kubejs:basic_mechanism"
+			id: "3A9886D3A4C2A3F3"
+			rewards: [
+				{
+					count: 4
+					id: "6CBBC006451421D5"
+					item: "kubejs:basic_mechanism"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "106B021F2C661849"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7D469B84226197DD"
+				item: "kubejs:basic_mechanism"
+				type: "item"
+			}]
+			title: "Basic Mechanism"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0616E6B085ACAC38"]
+			hide_dependency_lines: true
+			id: "63D63254C63732FB"
+			tasks: [{
+				id: "29C8506B5849AB64"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:saws"
+					}
+				}
+				title: "Any #forge:saws"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"6758B57F4E95DE00"
+				"4B85FC0E74CDA1B4"
+			]
+			hide: false
+			id: "5031BAED6509C310"
+			rewards: [
+				{
+					count: 4
+					id: "66FDF8C923E912CC"
+					item: "kubejs:sealed_mechanism"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "225909C6E89BFF37"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3DBD671F8F390849"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "00EE4AF891564926"
+				item: "kubejs:sealed_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 17.25d
+		}
+		{
+			dependencies: ["065AE87363A85093"]
+			hide: true
+			id: "46C152DA59EC499C"
+			tasks: [{
+				id: "5F9366D904DFAF24"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["333936F970882F7F"]
+			icon: "thermal:rubber"
+			id: "5EF2E0C502B0C29F"
+			tasks: [
+				{
+					id: "34F3BB6B484A9746"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "6AEFCAC9145734D7"
+					type: "checkmark"
+				}
+			]
+			title: "Rubber"
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5EF2E0C502B0C29F"]
+			icon: "thermal:cured_rubber"
+			id: "6758B57F4E95DE00"
+			tasks: [
+				{
+					id: "36A313B56E869A22"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+				{
+					id: "47418A0D10BADB86"
+					type: "checkmark"
+				}
+			]
+			title: "Cured Rubber"
+			x: -1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["62920B16906F0D95"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:copper_nugget"
+			id: "4B85FC0E74CDA1B4"
+			tasks: [
+				{
+					id: "7DAA72AF9A2FAAC0"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "05DDA2317445F427"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0BDD6BD206016B5E"]
+			hide: true
+			icon: "minecraft:cobblestone"
+			id: "366DDC43B851B1AD"
+			rewards: [{
+				count: 8
+				id: "059E6D098F9C1D87"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 512L
+					id: "381BD1E3F0E91617"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "3EF7AB82DFB3C567"
+					type: "checkmark"
+				}
+			]
+			title: "Still mining..."
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["19B362C3968524CA"]
+			description: [
+				"Obtaining obsidian is crucial but not a required step of this assembly."
+				""
+				"Thankfully you dont need much."
+			]
+			hide: true
+			icon: "minecraft:obsidian"
+			id: "35CDB39619C45714"
+			tasks: [
+				{
+					id: "6A6A17D0C120EA5F"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "093F5A94177C14FE"
+					type: "checkmark"
+				}
+			]
+			title: "Hardest of them all"
+			x: -8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["35CDB39619C45714"]
+			description: ["Thanks to &6Haunting&r this not so hard rock can soften a little."]
+			icon: "create_things_and_misc:powdered_obsidian_block"
+			id: "470A5D0468748A09"
+			tasks: [
+				{
+					id: "2762822615524A9D"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "0C6E0F5735F90EF3"
+					type: "checkmark"
+				}
+			]
+			title: "Softened a little"
+			x: -8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["470A5D0468748A09"]
+			description: [
+				"Crushing Crying Obsidian requires Crushing Wheels"
+				"Thankfully you can crush it using an explosion, its not as efficient but works."
+			]
+			icon: "create:powdered_obsidian"
+			id: "3B45FF747319D838"
+			tasks: [
+				{
+					id: "64F737C9C684F2E0"
+					item: "create:powdered_obsidian"
+					type: "item"
+				}
+				{
+					id: "7345AB3B44F87382"
+					type: "checkmark"
+				}
+			]
+			title: "And the loop closes"
+			x: -7.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"6CFFC5A27CC91C0C"
+				"4A12402CF60C73D6"
+			]
+			description: ["Now you can assemble trains, use different tracks or monorail to create the best sky transportation system!"]
+			hide: false
+			icon: "kubejs:train_mechanism"
+			id: "59A2FFACC204FA30"
+			rewards: [
+				{
+					count: 2
+					id: "76881777DB30B2D6"
+					item: "kubejs:train_mechanism"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7EC106BBDB67A382"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "412E31AF11C3759F"
+					item: "kubejs:train_mechanism"
+					type: "item"
+				}
+				{
+					id: "2A94D46820A2A07F"
+					type: "checkmark"
+				}
+			]
+			title: "Train Mechanism"
+			x: -5.25d
+			y: 17.25d
+		}
+		{
+			dependencies: ["6E851978AAA76FAE"]
+			description: ["Making a stable supply of brass is essential for progression, just like andesite alloy."]
+			id: "6CFFC5A27CC91C0C"
+			tasks: [{
+				id: "2F2D46BE39A80B3C"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"4234AB96D6043F9F"
+				"1A5CF2A6CD7D278E"
+			]
+			description: ["Mixing together Zinc and Copper in any shape (can be dust, nuggets, ingots) will produce a brass equivalent."]
+			id: "6E851978AAA76FAE"
+			tasks: [{
+				id: "522B71FECF17E81B"
+				item: "kubejs:brass_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["19B362C3968524CA"]
+			description: ["You should have collected some copper by now."]
+			hide: true
+			id: "1A5CF2A6CD7D278E"
+			tasks: [{
+				id: "2376BAB3E34F43E0"
+				item: "thermal:copper_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["19B362C3968524CA"]
+			description: ["And zinc."]
+			hide: true
+			id: "4234AB96D6043F9F"
+			tasks: [{
+				id: "09BDEF70C6FABD8B"
+				item: "kubejs:zinc_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3B45FF747319D838"]
+			description: ["Compressed obsidian powder."]
+			icon: "create:sturdy_sheet"
+			id: "4A12402CF60C73D6"
+			tasks: [
+				{
+					id: "5F3CC40C9786F291"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "404FBBB06BDA4889"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["46C152DA59EC499C"]
+			id: "333936F970882F7F"
+			tasks: [{
+				id: "33EE36B2F02AA5B8"
+				item: "thermal:resin_bucket"
+				type: "item"
+			}]
+			title: "Tree Juice"
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["366DDC43B851B1AD"]
+			id: "4B2CC884FCED4BCB"
+			rewards: [{
+				count: 2
+				id: "624FD9578C5BB841"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10240L
+				id: "31FB21446B8B9C1E"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "What the f..."
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2A6996DFF90BFBB0"]
+			hide: true
+			icon: "kubejs:basic_mechanism"
+			id: "79AAFB74B3CD6AB8"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5A7B9DEFD6DFD539"
+				type: "checkmark"
+			}]
+			title: "Ground zero"
+			x: -3.0d
+			y: -4.0d
 		}
 	]
-	subtitle: [
-		"Chapter I"
-		"Fundamentals"
-	]
-	title: "Getting started"
+	subtitle: ["Fundamentals"]
+	title: "&f1&r Ground Zero"
 }
